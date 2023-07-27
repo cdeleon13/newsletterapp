@@ -34,7 +34,7 @@ register_page(
 ###
 
 def load_data():
-    base_url = 'https://raw.githubusercontent.com/cdeleonc/newsletter-app/main/assets/'
+    base_url = 'https://raw.githubusercontent.com/cdeleon13/newsletterapp/main/assets/'
 
     newsletter_housed_counts_by_destination_url = base_url + 'newsletter_housed_counts_by_destination_by_race.csv'
     newsletter_housed_counts_by_destination_df = pd.read_csv(StringIO(requests.get(newsletter_housed_counts_by_destination_url).text))
