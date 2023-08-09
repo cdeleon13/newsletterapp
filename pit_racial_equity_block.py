@@ -7,52 +7,63 @@ pit_re_block = html.Div(
             className="re-block-1",
             children=[
                 dbc.Card(
-                    [
-                        dbc.CardHeader("Racial Equity Statements for PIT Data", className='display-4'),
+                    children=[
+                        dbc.CardHeader("Racial Equity Statements on Sheltered PIT Data", className='display-4 text-white'),
                         dbc.CardBody(
-                            [
+                            children=[
                                 dbc.Row(
-                                    [
+                                    children=[
                                         dbc.Col(
                                             dbc.Card(
-                                                [
-                                                    dbc.CardHeader("Sheltered PIT Data", className='display-5'),
-                                                    dbc.CardBody(
-                                                        children=[
-                                                            html.P(id='sheltered_pit_2'),
-                                                            html.P(id='sheltered_pit_1'),
-                                                            
-                                                        ]
-                                                    )
-                                                ], 
+                                                children=[
+                                                    dbc.CardHeader(children="Population Percent Statement"),
+                                                    dbc.CardBody(html.P(id='sheltered_pit_2'))
+                                                ], className="mb-3"
                                             ),
-                                            width=12, sm=12, md=6, lg=6, xl=6
                                         ),
                                         dbc.Col(
                                             dbc.Card(
-                                                [
-                                                    dbc.CardHeader("Unsheltered PIT Data", className='display-5'),
-                                                    dbc.CardBody(
-                                                        children=[
-                                                            html.P(id='unsheltered_pit_2'),
-                                                            html.P(id='unsheltered_pit_1'),
-                                                        ]
-                                                    )
+                                                children=[
+                                                    dbc.CardHeader("Likelihood Statement"),
+                                                    dbc.CardBody(html.P(id='sheltered_pit_1'))
+                                                ]
+                                            ),
+                                        )
+                                    ]
+                                )
+                            ],                                                    
+                        )
+                    ], color="#334E58", outline=False, style={"margin":"1vw 0"}
+                ),   
+                
+                dbc.Card(
+                    children=[
+                        dbc.CardHeader("Racial Equity Statements on Unsheltered PIT Data", className='display-4 text-dark'),
+                        dbc.CardBody(
+                            children=[
+                                dbc.Row(
+                                    children=[
+                                        dbc.Col(
+                                            dbc.Card(
+                                                children=[
+                                                    dbc.CardHeader("Population Percent Statement"),
+                                                    dbc.CardBody(html.P(id='unsheltered_pit_2'))
                                                 ],
                                             ),
-                                            width=12, sm=12, md=6, lg=6, xl=6
                                         ),
-                                    ],
-                                ),
-                            ],
-                            style={"height": "100%"}
-                        ),
-                    ],
-                    style={
-                        "background-color": "#BED9EC",
-                        "border-color": "#36413E",
-                        "opacity": "0.9",
-                    }
+                                        dbc.Col(
+                                            dbc.Card(
+                                                children=[
+                                                    dbc.CardHeader("Likelihood Statement"),
+                                                    dbc.CardBody(html.P(id='unsheltered_pit_1'))
+                                                ]
+                                            ),
+                                        )
+                                    ]
+                                )
+                            ]                                                        
+                        )
+                    ], color="#BED9EC", outline=False, style={"margin":"1vw 0"}
                 ),
             ],
             style={"height": "100%"}

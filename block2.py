@@ -84,7 +84,13 @@ block2 = html.Div(
                                                 ]),
                                             ]),
                                         ]),
-                                        html.Div(className='active-graph', children=[dcc.Graph(id='active_counts_pie')]),
+                                        html.Div(
+                                            className='active-graph', 
+                                            children=[
+                                                dcc.Graph(id='active_counts_pie', responsive=True)
+                                                ],
+                                            style={"width":"100%"}
+                                            ),
                                     ]
                                 ),
                             ]

@@ -24,7 +24,7 @@ from io import StringIO
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], use_pages=True, suppress_callback_exceptions=True)
 app.title = "HMIS Newsletter Dashboard"
-server = app.server
+# server = app.server
 
 # Specify the favicon
 favicon = "path/to/favicon.ico"
@@ -67,13 +67,20 @@ navbar = dbc.Navbar(
     ),
     color="dark",
     dark=True,
+    className="mb-3",
 )
 
 
 app.layout = html.Div([
     navbar,
     page_container,
-
+    html.Footer(
+        html.Img(
+            src="assets/navbar_bg.png",
+            style={"width": "100%", "height": "auto", "object-fit": "cover"}
+        ),
+        style={"background-color":"white"},
+    ),
 ])
 
 # add callback for toggling the collapse on small screens

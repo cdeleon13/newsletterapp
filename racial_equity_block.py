@@ -7,7 +7,7 @@ accordion_block = html.Div(
             className="re-block-1",
             children=[
                 dbc.Card([
-                    dbc.CardHeader(["Racial Equity Statements on First Time Homeless in HMIS"], className='display-4'),
+                    dbc.CardHeader(["Racial Equity Statements on First Time Homeless in HMIS"], className='display-4 text-white'),
                     dbc.CardBody(
                         children=[
                             dbc.Row(
@@ -32,9 +32,12 @@ accordion_block = html.Div(
                             )
                         ],
                     )
-                ], style={'margin':'15px 0'}),
+                ], style={
+                    'margin':'15px 0',
+                    "background-color":'#4485a1'
+                    }),
                 dbc.Card([
-                    dbc.CardHeader(["Racial Equity Statements on Active Clients in HMIS"], className='display-4'),
+                    dbc.CardHeader(["Racial Equity Statements on Active Clients in HMIS"], className='display-4 text-white'),
                     dbc.CardBody(
                         children=[
                             dbc.Row(
@@ -61,9 +64,12 @@ accordion_block = html.Div(
                             )
                         ],
                     )
-                ], style={'margin':'15px 0'}),
+                ], style={
+                    'margin':'15px 0',
+                    "background-color":'#F6C033'
+                    }),
                 dbc.Card([
-                    dbc.CardHeader(["Racial Equity Statements on Housed Clients in HMIS"], className='display-4'),
+                    dbc.CardHeader(["Racial Equity Statements on Housed Clients in HMIS"], className='display-4 text-white'),
                     dbc.CardBody(
                         children=[
                             dbc.Row(
@@ -90,7 +96,10 @@ accordion_block = html.Div(
                             )
                         ],
                     )
-                ], style={'margin':'15px 0'}),                
+                ], style={
+                    'margin':'15px 0',
+                    'background-color':'#71a6c5'
+                    }),
             ]
         )
     ]
