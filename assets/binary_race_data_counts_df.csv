@@ -1,37 +1,37 @@
 ,Binary Race Variable,Coordinated Entry,Day Shelter,Emergency Shelter,Homelessness Prevention,Other,PH - Housing with Services (no disability required for entry),PH - Permanent Supportive Housing (disability required for entry),PH - Rapid Re-Housing,Safe Haven,Services Only,Street Outreach,Transitional Housing,Year,PH - Housing Only
-0,Non-White,19,573,1073,769,1,12,45,275,1,1073,1971,147,2020,0
-1,White,41,1119,2022,850,3,18,62,337,6,1722,2493,289,2020,0
-2,"Black, African American, or African",14,419,598,400,1,2,22,179,0,580,629,107,2020,0
-3,"Non-Black, African American, or African",46,1273,2497,1219,3,28,85,433,7,2215,3835,329,2020,0
-4,Multi-Racial,0,38,56,96,0,1,6,24,0,108,52,8,2020,0
-5,Non-Multi-Racial,60,1654,3039,1523,4,29,101,588,7,2687,4412,428,2020,0
-6,"American Indian, Alaska Native, or Indigenous",1,40,58,16,0,0,5,10,1,68,55,9,2020,0
-7,"Non-American Indian, Alaska Native, or Indigenous",59,1652,3037,1603,4,30,102,602,6,2727,4409,427,2020,0
-8,Native Hawaiian or Pacific Islander,1,24,38,24,0,0,2,9,0,29,32,10,2020,0
-9,Non-Native Hawaiian or Pacific Islander,59,1668,3057,1595,4,30,105,603,7,2766,4432,426,2020,0
-10,Asian or Asian American,1,38,60,57,0,0,8,8,0,64,57,5,2020,0
-11,Non-Asian or Asian American,59,1654,3035,1562,4,30,99,604,7,2731,4407,431,2020,0
-12,Non-White,199,371,1375,386,0,1,40,461,5,861,1428,82,2021,9
-13,White,431,830,2299,724,0,11,41,362,11,1403,2846,219,2021,16
-14,"Black, African American, or African",110,275,843,213,0,1,22,262,4,476,765,59,2021,3
-15,"Non-Black, African American, or African",520,926,2831,897,0,11,59,561,12,1788,3509,242,2021,22
-16,Multi-Racial,26,15,95,33,0,0,8,28,0,115,107,7,2021,0
-17,Non-Multi-Racial,604,1186,3579,1077,0,12,73,795,16,2149,4167,294,2021,25
-18,"American Indian, Alaska Native, or Indigenous",11,35,104,10,0,0,3,7,0,47,106,4,2021,1
-19,"Non-American Indian, Alaska Native, or Indigenous",619,1166,3570,1100,0,12,78,816,16,2217,4168,297,2021,24
-20,Native Hawaiian or Pacific Islander,10,12,60,13,0,0,0,35,1,31,45,3,2021,0
-21,Non-Native Hawaiian or Pacific Islander,620,1189,3614,1097,0,12,81,788,15,2233,4229,298,2021,25
-22,Asian or Asian American,20,25,67,20,0,0,4,22,0,60,87,6,2021,1
-23,Non-Asian or Asian American,610,1176,3607,1090,0,12,77,801,16,2204,4187,295,2021,24
-24,Non-White,788,457,922,392,0,4,100,521,6,951,1667,86,2022,10
-25,White,1009,959,1621,554,0,2,112,431,9,1482,2952,293,2022,36
-26,"Black, African American, or African",494,312,568,221,0,2,74,433,1,492,818,61,2022,8
-27,"Non-Black, African American, or African",1303,1104,1975,725,0,4,138,519,14,1941,3801,318,2022,38
-28,Multi-Racial,96,20,83,35,0,0,5,38,1,116,138,3,2022,0
-29,Non-Multi-Racial,1701,1396,2460,911,0,6,207,914,14,2317,4481,376,2022,46
-30,"American Indian, Alaska Native, or Indigenous",54,56,85,19,0,0,3,13,2,87,138,7,2022,2
-31,"Non-American Indian, Alaska Native, or Indigenous",1743,1360,2458,927,0,6,209,939,13,2346,4481,372,2022,44
-32,Native Hawaiian or Pacific Islander,30,26,47,11,0,0,5,4,1,27,69,5,2022,0
-33,Non-Native Hawaiian or Pacific Islander,1767,1390,2496,935,0,6,207,948,14,2406,4550,374,2022,46
-34,Asian or Asian American,42,36,52,52,0,0,6,15,1,67,98,8,2022,0
-35,Non-Asian or Asian American,1755,1380,2491,894,0,6,206,937,14,2366,4521,371,2022,46
+0,Non-White,19,573,1070,768,1,13,45,275,1,1067,1969,147,2020,0
+1,White,41,1119,2024,851,3,18,63,336,6,1727,2493,289,2020,0
+2,"Black, African American, or African",14,420,596,400,1,2,22,179,0,580,629,107,2020,0
+3,"Non-Black, African American, or African",46,1272,2498,1219,3,29,86,432,7,2214,3833,329,2020,0
+4,Asian or Asian American,1,38,60,57,0,0,8,8,0,64,56,5,2020,0
+5,Non-Asian or Asian American,59,1654,3034,1562,4,31,100,603,7,2730,4406,431,2020,0
+6,Native Hawaiian or Pacific Islander,1,24,38,24,0,0,2,9,0,28,32,10,2020,0
+7,Non-Native Hawaiian or Pacific Islander,59,1668,3056,1595,4,31,106,602,7,2766,4430,426,2020,0
+8,Multi-Racial,0,37,58,96,0,1,6,24,0,108,52,8,2020,0
+9,Non-Multi-Racial,60,1655,3036,1523,4,30,102,587,7,2686,4410,428,2020,0
+10,"American Indian, Alaska Native, or Indigenous",1,40,58,16,0,0,5,10,1,68,55,9,2020,0
+11,"Non-American Indian, Alaska Native, or Indigenous",59,1652,3036,1603,4,31,103,601,6,2726,4407,427,2020,0
+12,Non-White,201,370,1371,387,0,1,40,457,5,858,1423,82,2021,9
+13,White,429,831,2303,723,0,12,42,366,11,1403,2848,219,2021,16
+14,"Black, African American, or African",110,275,843,213,0,1,22,262,4,473,765,59,2021,3
+15,"Non-Black, African American, or African",520,926,2831,897,0,12,60,561,12,1788,3506,242,2021,22
+16,Asian or Asian American,22,25,67,20,0,0,4,22,0,60,87,6,2021,1
+17,Non-Asian or Asian American,608,1176,3607,1090,0,13,78,801,16,2201,4184,295,2021,24
+18,Native Hawaiian or Pacific Islander,10,12,60,14,0,0,0,35,1,32,45,3,2021,0
+19,Non-Native Hawaiian or Pacific Islander,620,1189,3614,1096,0,13,82,788,15,2229,4226,298,2021,25
+20,Multi-Racial,26,15,94,33,0,0,8,28,0,115,106,7,2021,0
+21,Non-Multi-Racial,604,1186,3580,1077,0,13,74,795,16,2146,4165,294,2021,25
+22,"American Indian, Alaska Native, or Indigenous",11,35,105,10,0,0,3,7,0,47,104,4,2021,1
+23,"Non-American Indian, Alaska Native, or Indigenous",619,1166,3569,1100,0,13,79,816,16,2214,4167,297,2021,24
+24,Non-White,789,456,922,391,0,5,100,522,6,952,1665,86,2022,10
+25,White,1009,959,1619,555,0,2,112,431,9,1484,2953,294,2022,36
+26,"Black, African American, or African",494,311,566,221,0,2,74,434,1,496,816,61,2022,8
+27,"Non-Black, African American, or African",1304,1104,1975,725,0,5,138,519,14,1940,3802,319,2022,38
+28,Asian or Asian American,42,37,52,52,0,0,6,15,1,67,99,8,2022,0
+29,Non-Asian or Asian American,1756,1378,2489,894,0,7,206,938,14,2369,4519,372,2022,46
+30,Native Hawaiian or Pacific Islander,30,26,48,11,0,0,5,4,1,27,69,5,2022,0
+31,Non-Native Hawaiian or Pacific Islander,1768,1389,2493,935,0,7,207,949,14,2409,4549,375,2022,46
+32,Multi-Racial,97,19,83,35,0,0,5,38,1,116,139,3,2022,0
+33,Non-Multi-Racial,1701,1396,2458,911,0,7,207,915,14,2320,4479,377,2022,46
+34,"American Indian, Alaska Native, or Indigenous",54,56,86,19,0,0,3,13,2,87,139,7,2022,2
+35,"Non-American Indian, Alaska Native, or Indigenous",1744,1359,2455,927,0,7,209,940,13,2349,4479,373,2022,44
