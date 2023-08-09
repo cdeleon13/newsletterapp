@@ -114,7 +114,7 @@ race_picklist) = load_data()
 ###
 years_list = sorted(list(set(binary_race_data_counts_df['Year']).union(set(binary_race_likeliness_data_df['Year']))))
 proj_type_list = sorted([x for x in list(set(binary_race_data_counts_df.columns).union(set(binary_race_likeliness_data_df.columns))) if x not in ['Binary Race Variable',  'Unnamed: 0', 'Year']])
-race_variable_list = sorted(list(set(binary_race_data_counts_df['Binary Race Variable']).union(set(binary_race_likeliness_data_df['Binary Race Variable']))))
+race_variable_list = [x for x in sorted(list(set(binary_race_data_counts_df['Binary Race Variable']).union(set(binary_race_likeliness_data_df['Binary Race Variable'])))) if not x.startswith('Non-')]
 
 hmis_re_filters_section = dbc.Card(
     [
@@ -207,7 +207,7 @@ layout = dbc.Container(
                         accordion_block
                     ]
                 ),
-                label='HMIS Data Racial Equity Statements',active_label_style={'color':'grey', 'font-weight':'bolder'}, label_style={'color': 'white'}),
+                label='HMIS Data Racial Equity Statements',active_label_style={'color':'#006f9f', 'font-weight':'bolder'}, label_style={'color': 'white'}),
             dbc.Tab(
                 dbc.Container(
                     children=[
@@ -215,10 +215,10 @@ layout = dbc.Container(
                         pit_re_block
                     ]
                 ),
-                label='PIT Data Racial Equity Statements',active_label_style={'color':'grey', 'font-weight':'bolder'}, label_style={'color': 'white'}),
+                label='PIT Data Racial Equity Statements',active_label_style={'color':'#006f9f', 'font-weight':'bolder'}, label_style={'color': 'white'}),
         ]
         ),
-    ]
+    ], style={"z-index":-1}
 )
 
 @callback(
@@ -244,20 +244,53 @@ def racial_equity_data(selected_year, project_type, race_option):
     #First Time Homeless
     likely_metric = binary_race_likeliness_data_df[(binary_race_likeliness_data_df['Year'].values==selected_year) & (binary_race_likeliness_data_df['Binary Race Variable'].values==race_option)][project_type].values[0]
     compare_pop_percent = binary_race_data_counts_df[(binary_race_data_counts_df['Year'].values==selected_year) & (binary_race_data_counts_df['Binary Race Variable'].values==race_option)][project_type].values[0]/(binary_race_data_counts_df[(binary_race_data_counts_df['Year'].values==selected_year) & (binary_race_data_counts_df['Binary Race Variable'].values==race_option)][project_type].values[0] + binary_race_data_counts_df[(binary_race_data_counts_df['Year'].values==selected_year) & (binary_race_data_counts_df['Binary Race Variable'].values==f"Non-{race_option}")][project_type].values[0])
-    likely_metric_statement = f"{race_option} clients are {'{:.0f}'.format(likely_metric)} times more likely to be First Time Homeless in {project_type} than Non-{race_option} clients"
-    compare_pop_percent_statement = f"{race_option} clients make up {'{:.0%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.0%}'.format(compare_pop_percent)} in {project_type} programs in HMIS."
-    
+    if likely_metric>1:
+        likely_metric_statement = f"{race_option} clients are {'{:.1f}'.format(likely_metric)} times more likely to be First Time Homeless in {project_type} than Non-{race_option} clients"
+    elif likely_metric>0 and likely_metric<1:
+        likely_metric_statement = f"{race_option} clients are {'{:.1f}'.format(likely_metric)} times less likely to be First Time Homeless in {project_type} than Non-{race_option} clients"
+    elif likely_metric==1:
+        likely_metric_statement = f"{race_option} clients are as likely to be First Time Homeless in {project_type} as Non-{race_option} clients"
+    else:
+        likely_metric_statement= "No data available."
+
+    if compare_pop_percent>0:
+        compare_pop_percent_statement = f"{race_option} clients make up {'{:.1%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.1%}'.format(compare_pop_percent)} in {project_type} programs in HMIS."
+    else:
+        compare_pop_percent_statement = "No Data available."
     # Active 
     active_likely_metric = active_binary_race_likeliness_data_df[(active_binary_race_likeliness_data_df['Year'].values==selected_year) & (active_binary_race_likeliness_data_df['Binary Race Variable'].values==race_option)][project_type].values[0]
     active_compare_pop_percent = active_binary_race_data_counts_df[(active_binary_race_data_counts_df['Year'].values==selected_year) & (active_binary_race_data_counts_df['Binary Race Variable'].values==race_option)][project_type].values[0]/(active_binary_race_data_counts_df[(active_binary_race_data_counts_df['Year'].values==selected_year) & (active_binary_race_data_counts_df['Binary Race Variable'].values==race_option)][project_type].values[0] + active_binary_race_data_counts_df[(active_binary_race_data_counts_df['Year'].values==selected_year) & (active_binary_race_data_counts_df['Binary Race Variable'].values==f"Non-{race_option}")][project_type].values[0])
-    active_likely_metric_statement = f"{race_option} clients are {'{:.0f}'.format(active_likely_metric)} times more likely to be Active in an HMIS {project_type} program than Non-{race_option} clients"
-    active_compare_pop_percent_statement = f"{race_option} clients make up {'{:.0%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.0%}'.format(active_compare_pop_percent)} in {project_type} programs in HMIS."
+    
+    if active_likely_metric>1:
+        active_likely_metric_statement = f"{race_option} clients are {'{:.1f}'.format(active_likely_metric)} times more likely to be Active in an HMIS {project_type} program than Non-{race_option} clients"
+    elif active_likely_metric>0 and active_likely_metric<1:
+        active_likely_metric_statement = f"{race_option} clients are {'{:.1f}'.format(active_likely_metric)} times less likely to be Active in an HMIS {project_type} program than Non-{race_option} clients"
+    elif active_likely_metric==1:
+        active_likely_metric_statement = f"{race_option} clients are as likely to be Active in an HMIS {project_type} program as Non-{race_option} clients"
+    else:
+        active_likely_metric_statement = "No data available."
+    
+    if active_compare_pop_percent>0:
+        active_compare_pop_percent_statement = f"{race_option} clients make up {'{:.1%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.1%}'.format(active_compare_pop_percent)} in {project_type} programs in HMIS."
+    else:
+        active_compare_pop_percent_statement = "No data available."
 
     #Housed
     housed_likely_metric = housed_binary_race_likeliness_data_df[(housed_binary_race_likeliness_data_df['Year'].values==selected_year) & (housed_binary_race_likeliness_data_df['Binary Race Variable'].values==race_option)][project_type].values[0]
     housed_compare_pop_percent = housed_binary_race_data_counts_df[(housed_binary_race_data_counts_df['Year'].values==selected_year) & (housed_binary_race_data_counts_df['Binary Race Variable'].values==race_option)][project_type].values[0]/(housed_binary_race_data_counts_df[(housed_binary_race_data_counts_df['Year'].values==selected_year) & (housed_binary_race_data_counts_df['Binary Race Variable'].values==race_option)][project_type].values[0] + housed_binary_race_data_counts_df[(housed_binary_race_data_counts_df['Year'].values==selected_year) & (housed_binary_race_data_counts_df['Binary Race Variable'].values==f"Non-{race_option}")][project_type].values[0])
-    housed_likely_metric_statement = f"{race_option} clients are {'{:.0f}'.format(housed_likely_metric)} times more likely to be Housed through a {project_type} than Non-{race_option} clients"
-    housed_compare_pop_percent_statement = f"{race_option} clients make up {'{:.0%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.0%}'.format(housed_compare_pop_percent)} in {project_type} programs in HMIS."
+    if housed_likely_metric>1:
+        housed_likely_metric_statement = f"{race_option} clients are {'{:.1f}'.format(housed_likely_metric)} times more likely to be Housed through a {project_type} than Non-{race_option} clients"
+    elif housed_likely_metric>0 and housed_likely_metric<1:
+        housed_likely_metric_statement = f"{race_option} clients are {'{:.1f}'.format(housed_likely_metric)} times less likely to be Housed through a {project_type} than Non-{race_option} clients"
+    elif housed_likely_metric==1:
+        housed_likely_metric_statement = f"{race_option} clients are as likely to be Housed through a {project_type} as Non-{race_option} clients"
+    else:
+        housed_likely_metric_statement = "No data available."
+
+    if housed_compare_pop_percent>0:
+        housed_compare_pop_percent_statement = f"{race_option} clients make up {'{:.1%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.1%}'.format(housed_compare_pop_percent)} in {project_type} programs in HMIS."
+    else:
+        housed_compare_pop_percent_statement = "No data available."
 
     return likely_metric_statement,compare_pop_percent_statement, active_likely_metric_statement, active_compare_pop_percent_statement, housed_likely_metric_statement, housed_compare_pop_percent_statement
 
@@ -279,11 +312,36 @@ def racial_equity_pit_data(selected_year, race_option):
         'Multi-Racial':.049
     }
     sheltered_pit_1 = pit_data_likely_df[(pit_data_likely_df['Year'].values==selected_year) & (pit_data_likely_df['Race'].values==race_option) & (pit_data_likely_df['index'].values=='Sheltered')]['Likely Metric'].values[0]
-    sheltered_likely_metric_statement = f"{race_option} clients are {'{:.0f}'.format(sheltered_pit_1)} times more likely to be Sheltered Homeless than Non-{race_option} clients"
+    if sheltered_pit_1>1:
+        sheltered_likely_metric_statement = f"{race_option} clients are {'{:.1f}'.format(sheltered_pit_1)} times more likely to be Sheltered Homeless than Non-{race_option} clients"
+    elif sheltered_pit_1>0 and sheltered_pit_1<1:
+        sheltered_likely_metric_statement = f"{race_option} clients are {'{:.1f}'.format(sheltered_pit_1)} times less likely to be Sheltered Homeless than Non-{race_option} clients"
+    elif sheltered_pit_1==1:
+        sheltered_likely_metric_statement = f"{race_option} clients are as likely to be Sheltered Homeless than Non-{race_option} clients"
+    else: 
+        sheltered_likely_metric_statement = "No data available."
+
     sheltered_pit_2 = pit_data_df[(pit_data_df['Year'].values==selected_year) & (pit_data_df['static_demographics.race_text'].values==race_option)]['Sheltered'].values[0]/pit_data_df[(pit_data_df['Year'].values==selected_year)]['Sheltered'].sum()
-    sheltered_compare_pop_percent_statement = f"{race_option} clients make up {'{:.0%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.0%}'.format(sheltered_pit_2)} of the Sheltered Homeless population."
+    
+    if sheltered_pit_2>0:
+        sheltered_compare_pop_percent_statement = f"{race_option} clients make up {'{:.1%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.1%}'.format(sheltered_pit_2)} of the Sheltered Homeless population."
+    else:
+        sheltered_compare_pop_percent_statement = "No data available."
+
     unsheltered_pit_1 = pit_data_likely_df[(pit_data_likely_df['Year'].values==selected_year) & (pit_data_likely_df['Race'].values==race_option) & (pit_data_likely_df['index'].values=='Unsheltered')]['Likely Metric'].values[0]
-    unsheltered_likely_metric_statement = f"{race_option} clients are {'{:.0f}'.format(unsheltered_pit_1)} times more likely to be Unsheltered Homeless than Non-{race_option} clients"
+    if unsheltered_pit_1>1:
+        unsheltered_likely_metric_statement = f"{race_option} clients are {'{:.1f}'.format(unsheltered_pit_1)} times more likely to be Unsheltered Homeless than Non-{race_option} clients"
+    elif unsheltered_pit_1>0 and unsheltered_pit_1<1:
+        unsheltered_likely_metric_statement = f"{race_option} clients are {'{:.1f}'.format(unsheltered_pit_1)} times more likely to be Unsheltered Homeless than Non-{race_option} clients"
+    elif unsheltered_pit_1==1:
+        unsheltered_likely_metric_statement = f"{race_option} clients are {'{:.1f}'.format(unsheltered_pit_1)} times more likely to be Unsheltered Homeless than Non-{race_option} clients"
+    else:
+        unsheltered_likely_metric_statement = "No data available."
+
     unsheltered_pit_2 = pit_data_df[(pit_data_df['Year'].values==selected_year) & (pit_data_df['static_demographics.race_text'].values==race_option)]['Unsheltered'].values[0]/pit_data_df[(pit_data_df['Year'].values==selected_year)]['Unsheltered'].sum()
-    unsheltered_compare_pop_percent_statement = f"{race_option} clients make up {'{:.0%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.0%}'.format(unsheltered_pit_2)} of the Unsheltered Homeless population."
+    if unsheltered_pit_2>0:
+        unsheltered_compare_pop_percent_statement = f"{race_option} clients make up {'{:.1%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.1%}'.format(unsheltered_pit_2)} of the Unsheltered Homeless population."
+    else:
+        unsheltered_compare_pop_percent_statement = "No data available."
+        
     return sheltered_likely_metric_statement, sheltered_compare_pop_percent_statement, unsheltered_likely_metric_statement, unsheltered_compare_pop_percent_statement

@@ -69,7 +69,7 @@ def load_data():
     pit_data_likely_df = pd.read_csv(StringIO(requests.get(pit_data_likely_url).text))
     pit_data_url = base_url + 'pit_data_df.csv'
     pit_data_df = pd.read_csv(StringIO(requests.get(pit_data_url).text))
-
+    
     race_picklist = sorted(list(newsletter_counts_by_race_df1['static_demographics.race_text'].unique()))
     return (
         newsletter_housed_counts_by_destination_df, 
@@ -182,7 +182,7 @@ layout =  dbc.Container(
                             ),
                         ]
                     ),
-                ]
+                ], style={"z-index":-1}
             )
 
 @callback(
@@ -196,17 +196,18 @@ def update_figure1(selected_year, report_window):
     fig = px.pie(filtered_df, names="Project Type", values="Active Clients Count", labels='abbrev', hole=.7, color_discrete_sequence=px.colors.qualitative.Vivid[:len(filtered_df)],)
     # active_client_count = filtered_df['Active Clients Count'].sum()
     fig.update_layout({
-        "margin_l":0,
-        "margin_r":120,
         'plot_bgcolor': 'rgba(0,0,0,0)',
         'paper_bgcolor': 'rgba(0,0,0,0)',
         'legend_font': {"color":"rgba(255,255,255,0.95)"},
         "legend_title_text":"HMIS Project Types",
         "legend_title_side":"top",
+        "legend_orientation":"h",
         "legend_yanchor":"top",
-        "legend_y":.85,
-        "legend_xanchor":"right",
-        "legend_x":2.1})
+        "legend_y":0,
+        "legend_xanchor":"center",
+        "legend_x":0.5,
+        "legend_font_size": 10,
+        })
 
     fig.update_traces(
         textposition="auto",
@@ -243,6 +244,7 @@ def update_figure2(selected_year, report_window):
     'uniformtext_minsize': 12,
     'uniformtext_mode': 'hide',
     })
+    fig.update_traces(textposition='inside', hovertemplate='%{value:.0f}')
     fig.update_xaxes(visible=False)
     fig.update_yaxes(
         tickmode="array",
@@ -323,7 +325,7 @@ def update_(selected_year, report_window):
             'uniformtext_minsize': 12,
             'uniformtext_mode': 'hide',
         })
-        fig.update_traces(textposition='inside', hovertemplate='%{label}: %{value:.2f}')
+        fig.update_traces(textposition='inside', hovertemplate='%{label}: %{value:.0f}')
 
         donut_plot_d[col] = fig
     return donut_plot_d['FTH Count'], donut_plot_d['Housed Count'], donut_plot_d['New Program Entries Count'], donut_plot_d['New Referrals Count']
@@ -383,6 +385,8 @@ def update_housed_race_plots(selected_year, report_window):
             "autosize":False,
             # 'config': {'displayModeBar': False}
         })
+
+        fig.update_traces(textposition='inside', hovertemplate='%{value:.0f}')
 
         bar_plot_d[col] = fig
     return (
