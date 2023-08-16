@@ -357,7 +357,7 @@ def update_housed_race_plots(selected_year, report_window):
             if name not in color_dict:
                 color_dict[name] = color_palette[i % len(color_palette)]
 
-        fig = px.bar(count_by_race_df, x=col, y='Reporting Month', orientation='h', color='static_demographics.race_text', text_auto=True, color_discrete_map=color_dict)
+        fig = px.bar(count_by_race_df, x=col, y='Reporting Month', orientation='h', text_auto=True, color_discrete_map=color_dict, color='static_demographics.race_text')
         fig.update_layout({
             'plot_bgcolor': 'rgba(0,0,0,0)',
             'paper_bgcolor': 'rgba(0,0,0,0)',
