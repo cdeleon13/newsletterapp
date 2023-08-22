@@ -352,10 +352,10 @@ def update_housed_race_plots(selected_year, report_window):
 
         count_by_race_df = count_by_race_df.sort_values(col, ascending=True)
 
-        # Create color_dict and assign a color to each category in names argument
-        for i, name in enumerate(count_by_race_df['static_demographics.race_text'].unique()):
-            if name not in color_dict:
-                color_dict[name] = color_palette[i % len(color_palette)]
+        # # Create color_dict and assign a color to each category in names argument
+        # for i, name in enumerate(count_by_race_df['static_demographics.race_text'].unique()):
+        #     if name not in color_dict:
+        #         color_dict[name] = color_palette[i % len(color_palette)]
 
         fig = px.bar(count_by_race_df, x=col, y='Reporting Month', orientation='h', text_auto=True, color_discrete_map=color_dict, color='static_demographics.race_text')
         fig.update_layout({

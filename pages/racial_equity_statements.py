@@ -254,7 +254,7 @@ def racial_equity_data(selected_year, project_type, race_option):
         likely_metric_statement= "No data available."
 
     if compare_pop_percent>0:
-        compare_pop_percent_statement = f"{race_option} clients make up {'{:.1%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.1%}'.format(compare_pop_percent)} in {project_type} programs in HMIS."
+        compare_pop_percent_statement = f"{race_option} clients make up {'{:.1%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.1%}'.format(compare_pop_percent)} of the Firt Time Homeless population in {project_type} programs in HMIS."
     else:
         compare_pop_percent_statement = "No Data available."
     # Active 
@@ -271,7 +271,7 @@ def racial_equity_data(selected_year, project_type, race_option):
         active_likely_metric_statement = "No data available."
     
     if active_compare_pop_percent>0:
-        active_compare_pop_percent_statement = f"{race_option} clients make up {'{:.1%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.1%}'.format(active_compare_pop_percent)} in {project_type} programs in HMIS."
+        active_compare_pop_percent_statement = f"{race_option} clients make up {'{:.1%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.1%}'.format(active_compare_pop_percent)} of the Active population in {project_type} programs in HMIS."
     else:
         active_compare_pop_percent_statement = "No data available."
 
@@ -288,7 +288,7 @@ def racial_equity_data(selected_year, project_type, race_option):
         housed_likely_metric_statement = "No data available."
 
     if housed_compare_pop_percent>0:
-        housed_compare_pop_percent_statement = f"{race_option} clients make up {'{:.1%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.1%}'.format(housed_compare_pop_percent)} in {project_type} programs in HMIS."
+        housed_compare_pop_percent_statement = f"{race_option} clients make up {'{:.1%}'.format(population_percent[race_option])} of the general population in San Diego County but make up {'{:.1%}'.format(housed_compare_pop_percent)} of the Housed population in {project_type} programs in HMIS."
     else:
         housed_compare_pop_percent_statement = "No data available."
 
