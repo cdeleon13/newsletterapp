@@ -66,7 +66,7 @@ accordion_block = html.Div(
                     )
                 ], style={
                     'margin':'15px 0',
-                    "background-color":'#F6C033'
+                    "background-color":'steelblue'
                     }),
                 dbc.Card([
                     dbc.CardHeader(["Racial Equity Statements on Housed Clients in HMIS"], className='display-4 text-white'),
