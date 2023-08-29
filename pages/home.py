@@ -3,6 +3,7 @@
 
 from dash import Dash, html, dcc, Input, Output, page_registry, page_container, register_page, callback
 import plotly.express as px
+import plotly.graph_objs as go
 import pandas as pd
 
 from datetime import datetime
@@ -156,8 +157,8 @@ filters_section = dbc.Card(
 # | newsletter_filters.py
 ###
 
-color_dict = {}
-color_palette = px.colors.qualitative.Plotly
+# color_dict = {}
+# color_palette = px.colors.qualitative.Plotly
 
 layout =  dbc.Container(
                 children=[
@@ -184,6 +185,18 @@ layout =  dbc.Container(
                     ),
                 ], style={"z-index":-1}
             )
+
+color_dict = {
+    'Native Hawaiian or Pacific Islander': '#19D3F3',
+    'Asian or Asian American': '#FFA15A',
+    'White': '#636EFA',
+    'Data not collected': '#FF6692',
+    "Client doesn't know":  '#FF97FF',
+    'American Indian, Alaska Native, or Indigenous':'#AB63FA', 
+    'Multi-Racial':'#00CC96', 
+    'Black, African American, or African': '#EF553B',
+    'Client refused':'#B6E880',
+    }
 
 @callback(
     Output('active_counts_pie', 'figure'),
@@ -229,12 +242,12 @@ def update_figure2(selected_year, report_window):
     # Sort the dataframe by 'clients.unique_identifier' in descending order
     filtered_df = filtered_df.sort_values('clients.unique_identifier', ascending=True)
 
-    # Create color_dict and assign a color to each category in names argument
-    for i, name in enumerate(filtered_df['static_demographics.race_text'].unique()):
-        if name not in color_dict:
-            color_dict[name] = color_palette[i % len(color_palette)]
+    # # Create color_dict and assign a color to each category in names argument
+    # for i, name in enumerate(filtered_df['static_demographics.race_text'].unique()):
+    #     if name not in color_dict:
+    #         color_dict[name] = color_palette[i % len(color_palette)]
 
-    fig = px.bar(filtered_df, y='Permanent Destination', x='clients.unique_identifier', orientation='h', color='static_demographics.race_text', text_auto=True, color_discrete_map=color_dict)
+    fig = px.bar(filtered_df, y='Permanent Destination', x='clients.unique_identifier', orientation='h', text_auto=True, color='static_demographics.race_text', color_discrete_map=color_dict)
     fig.update_layout({
     'plot_bgcolor': 'rgba(0,0,0,0)',
     'paper_bgcolor': 'rgba(0,0,0,0)',
@@ -255,43 +268,6 @@ def update_figure2(selected_year, report_window):
 
     return fig
 
-@callback(
-    Output(component_id='fth_count', component_property='children'),
-    Output(component_id='housed_count', component_property='children'),
-    Output(component_id='new_entries_count', component_property='children'),
-    Output(component_id='new_referrals_count', component_property='children'),
-    Output(component_id='seniors_active_count', component_property='children'),
-    Output(component_id='tay_active_count', component_property='children'),
-    Output(component_id='families_active_count', component_property='children'),
-    Output(component_id='veterans_active_count', component_property='children'),
-    Output(component_id='housed_count_1', component_property='children'),
-    Output(component_id='senior_housed_count', component_property='children'),
-    Output(component_id='tay_housed_count', component_property='children'),
-    Output(component_id='families_housed_count', component_property='children'),
-    Output(component_id='veterans_housed_count', component_property='children'),
-    Output(component_id='active_count', component_property='children'),
-    Input('year-slider', 'value'),
-    Input('report-window', 'value'),
-    )
-def update_metrics(selected_year, report_window):
-    temp_df = newsletter_counts_by_race_df1[(newsletter_counts_by_race_df1['Reporting Month'].values==selected_year) & (newsletter_counts_by_race_df1['Reporting Window'].values==report_window)]
-    d = {col: temp_df[col].sum() for col in temp_df if 'Count' in col}
-    return (
-        d['FTH Count'], 
-        d['Housed Count'], 
-        d['New Program Entries Count'], 
-        d['New Referrals Count'],
-        d['Active Seniors Count'], 
-        d['Active TAY Count'],
-        d['Active Families Count'],
-        d['Active Veterans Count'],
-        d['Housed Count'], 
-        d['Housed Seniors Count'],
-        d['Housed TAY Count'],
-        d['Housed Families Count'],
-        d['Housed Veterans Count'],
-        d['Active Count'],
-        )
 
 @callback(
     Output('fth_race_plot', 'figure'),
@@ -308,12 +284,13 @@ def update_(selected_year, report_window):
     for col in [x for x in temp_df.columns if 'Count' in x]:
         count_by_race_df = temp_df[['static_demographics.race_text',col]].copy()
 
-        # Create color_dict and assign a color to each category in names argument
-        for i, name in enumerate(count_by_race_df['static_demographics.race_text'].unique()):
-            if name not in color_dict:
-                color_dict[name] = color_palette[i % len(color_palette)]
+        fig = px.pie(count_by_race_df, names='static_demographics.race_text', values=col, hole=0.7)
 
-        fig = px.pie(count_by_race_df, names='static_demographics.race_text', values=col, hole=0.7, color_discrete_map=color_dict)
+        # Get the list of colors corresponding to each race category
+        colors = [color_dict.get(name, 'gray') for name in count_by_race_df['static_demographics.race_text'].unique()]
+        # Set the colors for each sector
+        fig.update_traces(marker=dict(colors=colors))
+
         fig.update_layout({
             'showlegend':False,
             'plot_bgcolor': 'rgba(0,0,0,0)',
@@ -325,10 +302,21 @@ def update_(selected_year, report_window):
             'uniformtext_minsize': 12,
             'uniformtext_mode': 'hide',
         })
+
+        # Update the color of each trace using the color_dict
+        for i, name in enumerate(count_by_race_df['static_demographics.race_text'].unique()):
+            fig.update_traces(selector=dict(name=name), marker=dict(colors=[color_dict[name]]))
+
         fig.update_traces(textposition='inside', hovertemplate='%{label}: %{value:.0f}')
 
         donut_plot_d[col] = fig
-    return donut_plot_d['FTH Count'], donut_plot_d['Housed Count'], donut_plot_d['New Program Entries Count'], donut_plot_d['New Referrals Count']
+
+    return (
+        donut_plot_d['FTH Count'],
+        donut_plot_d['Housed Count'],
+        donut_plot_d['New Program Entries Count'],
+        donut_plot_d['New Referrals Count']
+    )
 
 @callback(
     Output('senior_active_race_plot', 'figure'),
@@ -398,6 +386,44 @@ def update_housed_race_plots(selected_year, report_window):
         bar_plot_d['Housed Veterans Count'], 
         bar_plot_d['Housed TAY Count'], 
         bar_plot_d['Housed Families Count'])
+
+@callback(
+    Output(component_id='fth_count', component_property='children'),
+    Output(component_id='housed_count', component_property='children'),
+    Output(component_id='new_entries_count', component_property='children'),
+    Output(component_id='new_referrals_count', component_property='children'),
+    Output(component_id='seniors_active_count', component_property='children'),
+    Output(component_id='tay_active_count', component_property='children'),
+    Output(component_id='families_active_count', component_property='children'),
+    Output(component_id='veterans_active_count', component_property='children'),
+    Output(component_id='housed_count_1', component_property='children'),
+    Output(component_id='senior_housed_count', component_property='children'),
+    Output(component_id='tay_housed_count', component_property='children'),
+    Output(component_id='families_housed_count', component_property='children'),
+    Output(component_id='veterans_housed_count', component_property='children'),
+    Output(component_id='active_count', component_property='children'),
+    Input('year-slider', 'value'),
+    Input('report-window', 'value'),
+    )
+def update_metrics(selected_year, report_window):
+    temp_df = newsletter_counts_by_race_df1[(newsletter_counts_by_race_df1['Reporting Month'].values==selected_year) & (newsletter_counts_by_race_df1['Reporting Window'].values==report_window)]
+    d = {col: temp_df[col].sum() for col in temp_df if 'Count' in col}
+    return (
+        d['FTH Count'], 
+        d['Housed Count'], 
+        d['New Program Entries Count'], 
+        d['New Referrals Count'],
+        d['Active Seniors Count'], 
+        d['Active TAY Count'],
+        d['Active Families Count'],
+        d['Active Veterans Count'],
+        d['Housed Count'], 
+        d['Housed Seniors Count'],
+        d['Housed TAY Count'],
+        d['Housed Families Count'],
+        d['Housed Veterans Count'],
+        d['Active Count'],
+        )
 
 # Define callback to update options of year-slider based on report-window value
 @callback(
