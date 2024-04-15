@@ -6,11 +6,9 @@ block2 = html.Div(
     className="block-2",
     children=[
         dbc.Card(
-            style={'background-color': '#153654', 'border': '1px solid white'},
+            style={'background-color': 'white', 'border': '1px solid white'},
             children=[
-                dbc.CardHeader(
-                    html.H2(children="Who's active?", className='display-4', style={'color': 'white'})
-                ),
+                dbc.CardHeader(children="Who's active?", className='display-4',style={"font-weight":"bolder","background-color":'#20AF90', "color":"white"}),
                 dbc.CardBody(
                     children=[
                         dbc.Container(
@@ -22,8 +20,8 @@ block2 = html.Div(
                                             className="mb-3",
                                             width={"xl": 3, "lg": 6, "md": 6},
                                             children=[
-                                                html.H3(id="seniors_active_count", className='display-4', style={'color': 'white'}),
-                                                html.H3(children="Seniors (55+) Served", className='display-5', style={'color': 'white'}),
+                                                html.H3(id="seniors_active_count", className='display-4', style={"font-weight":"bolder","background-color":'#20AF90', "color":"white"}),
+                                                html.H3(children="Seniors (55+) Served", className='display-5', style={"font-weight":"bolder","background-color":'#20AF90', "color":"white"}),
                                                 html.Div(
                                                     className='housed_plots',
                                                     children=dcc.Graph(id='senior_active_race_plot', config={'displayModeBar': False}),
@@ -34,8 +32,8 @@ block2 = html.Div(
                                             className="mb-3",
                                             width={"xl": 3, "lg": 6, "md": 6},
                                             children=[
-                                                html.H3(id="families_active_count", className='display-4', style={'color': 'white'}),
-                                                html.H3(children="Families Served", className='display-5', style={'color': 'white'}),
+                                                html.H3(id="families_active_count", className='display-4', style={"font-weight":"bolder","background-color":'#20AF90', "color":"white"}),
+                                                html.H3(children="Families Served", className='display-5', style={"font-weight":"bolder","background-color":'#20AF90', "color":"white"}),
                                                 html.Div(
                                                     className='housed_plots',
                                                     children=dcc.Graph(id='families_active_race_plot', config={'displayModeBar': False}),
@@ -46,8 +44,8 @@ block2 = html.Div(
                                             className="mb-3",
                                             width={"xl": 3, "lg": 6, "md": 6},
                                             children=[
-                                                html.H3(id="tay_active_count", className='display-4', style={'color': 'white'}),
-                                                html.H3(children="TAY (18-24) Served", className='display-5', style={'color': 'white'}),
+                                                html.H3(id="tay_active_count", className='display-4', style={"font-weight":"bolder","background-color":'#20AF90', "color":"white"}),
+                                                html.H3(children="TAY (18-24) Served", className='display-5', style={"font-weight":"bolder","background-color":'#20AF90', "color":"white"}),
                                                 html.Div(
                                                     className='housed_plots',
                                                     children=dcc.Graph(id='tay_active_race_plot', config={'displayModeBar': False}),
@@ -58,15 +56,15 @@ block2 = html.Div(
                                             className="mb-3",
                                             width={"xl": 3, "lg": 6, "md": 6},
                                             children=[
-                                                html.H3(id="veterans_active_count", className='display-4', style={'color': 'white'}),
-                                                html.H3(children="Veterans Served", className='display-5', style={'color': 'white'}),
+                                                html.H3(id="veterans_active_count", className='display-4', style={"font-weight":"bolder","background-color":'#20AF90', "color":"white"}),
+                                                html.H3(children="Veterans Served", className='display-5', style={"font-weight":"bolder","background-color":'#20AF90', "color":"white"}),
                                                 html.Div(
                                                     className='housed_plots',
                                                     children=dcc.Graph(id='veteran_active_race_plot', config={'displayModeBar': False}),
                                                 ),
                                             ]
                                         )
-                                    ]
+                                    ],
                                 )
                             ]
                         ),
@@ -79,11 +77,11 @@ block2 = html.Div(
                                         html.Div(className='active-card align-self-stretch', id='active-card-center', children=[
                                             html.Div(className='card active-card-container', children=[
                                                 html.Div(className='active-card-top', children=[
-                                                    html.Div(id="active_count", className="active-metric-1 display-4", style={'color': '#153654'}),
-                                                    html.Div(className="active-text-1 display-4", children="Total Active Clients", style={'color': '#153654'}),
-                                                ]),
+                                                    html.Div(id="active_count", className="active-metric-1 display-4", style={"font-weight":"bolder","background-color":'#20AF90', "color":"white"}),
+                                                    html.Div(className="active-text-1 display-4", children="Total Active Clients", style={"font-weight":"bolder","background-color":'#20AF90', "color":"white"}),
+                                                ], style={"font-weight":"bolder","background-color":'#20AF90', "color":"white"}),
                                             ]),
-                                        ]),
+                                        ],),
                                         html.Div(
                                             className='active-graph', 
                                             children=[
@@ -93,7 +91,7 @@ block2 = html.Div(
                                             ),
                                     ]
                                 ),
-                            ]
+                            ],
                         ),
                     ]
                 ),
