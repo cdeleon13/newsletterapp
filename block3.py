@@ -5,16 +5,16 @@ block3 = html.Div(
             className="block-3",
             children=[
                 dbc.Card(
-                    style={'background-color': '#3C7681', 'border': 'solid 1px white', 'color':'white'},
+                    style={'background-color': 'white', 'border': 'solid 1px white', 'color':'8D3188'},
                     children=[
-                        dbc.CardHeader(html.H2(children="Who found housing?", className='display-4')),
+                        dbc.CardHeader(html.H2(children="Who found housing?", className='display-4', style={"font-weight":"bolder"}), style={"font-weight":"bolder","background-color":'#8D3188', "color":"white"}),
                         dbc.CardBody(
                             children=[
                                 dbc.Row(
                                     className="d-flex align-items-stretch mb-3",
                                     children=[
                                         dbc.Col(
-                                            className="card",
+                                            # className="card",
                                             width={"xl": 4, "md": 6, "sm": 12},
                                             children=[
                                                 html.Div(                                                
@@ -22,15 +22,15 @@ block3 = html.Div(
                                                         html.H3(
                                                             id="housed_count_1",
                                                             className="metric display-4",
-                                                            style={'color': '#3C7681'}
+                                                            style={"font-weight":"bolder","background-color":'#8D3188', "color":"white"}
                                                         ),
-                                                        html.H3(children="Persons Housed", className='display-4', style={'color': '#3C7681'}),
+                                                        html.H3(children="Persons Housed", className='display-4', style={"font-weight":"bolder","background-color":'#8D3188', "color":"white"}),
                                                     ],
                                                 )
                                             ],
                                         ),
-                                    ]
-                                ),
+                                    ],
+                                style={"font-weight":"bolder","background-color":'#8D3188', "color":"white"}),
                                 dbc.Row(
                                     className="d-flex align-items-center",
                                     children=[
@@ -169,7 +169,7 @@ block3 = html.Div(
                                                                             children="|",
                                                                         ),
                                                                 html.H4(className='display-5', children="Veterans"),
-                                                            ],
+                                                            ], #style={"font-weight":"bolder","background-color":'#8D3188', "color":"white"}
                                                         ),
                                                         html.Div(
                                                             className="housed_plots display-4 mb-3",
@@ -181,7 +181,7 @@ block3 = html.Div(
                                                 ),
                                             ],
                                         ),
-                                    ],
+                                    ], 
                                 ),
                                 dbc.Row(
                                     children=[
