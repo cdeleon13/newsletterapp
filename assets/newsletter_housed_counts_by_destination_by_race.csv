@@ -1,0 +1,182 @@
+,static_demographics.race_text,Permanent Destination,clients.unique_identifier,Permanent Destination % by Race,Reporting Year,Reporting Window
+0,"American Indian, Alaska Native, or Indigenous",Move In to PH,64,0.0054926192928252664,2020,Annual
+1,"American Indian, Alaska Native, or Indigenous",Moved in with Family,28,0.002403020940611054,2020,Annual
+2,"American Indian, Alaska Native, or Indigenous",Owned by Client,5,0.0004291108822519739,2020,Annual
+3,"American Indian, Alaska Native, or Indigenous",Rental by Client No Subsidy,47,0.004033642293168555,2020,Annual
+4,"American Indian, Alaska Native, or Indigenous",Rental by Client with Subsidy,76,0.006522485410230003,2020,Annual
+5,Asian or Asian American,Move In to PH,61,0.0052351527634740816,2020,Annual
+6,Asian or Asian American,Moved in with Family,17,0.0014589769996567112,2020,Annual
+7,Asian or Asian American,Owned by Client,1,8.582217645039479e-05,2020,Annual
+8,Asian or Asian American,Rental by Client No Subsidy,62,0.005320974939924477,2020,Annual
+9,Asian or Asian American,Rental by Client with Subsidy,68,0.005835907998626845,2020,Annual
+10,"Black, African American, or African",Move In to PH,1116,0.09577754891864057,2020,Annual
+11,"Black, African American, or African",Moved in with Family,390,0.03347064881565397,2020,Annual
+12,"Black, African American, or African",Other Permanent Housing,3,0.00025746652935118434,2020,Annual
+13,"Black, African American, or African",Owned by Client,46,0.00394782011671816,2020,Annual
+14,"Black, African American, or African",Rental by Client No Subsidy,890,0.07638173704085136,2020,Annual
+15,"Black, African American, or African",Rental by Client with Subsidy,1176,0.10092687950566426,2020,Annual
+16,Client doesn't know,Move In to PH,21,0.0018022657054582905,2020,Annual
+17,Client doesn't know,Moved in with Family,11,0.0009440439409543426,2020,Annual
+18,Client doesn't know,Owned by Client,3,0.00025746652935118434,2020,Annual
+19,Client doesn't know,Rental by Client No Subsidy,40,0.0034328870580157913,2020,Annual
+20,Client doesn't know,Rental by Client with Subsidy,10,0.0008582217645039478,2020,Annual
+21,Client prefers not to answer,Move In to PH,12,0.0010298661174047373,2020,Annual
+22,Client prefers not to answer,Moved in with Family,9,0.000772399588053553,2020,Annual
+23,Client prefers not to answer,Owned by Client,1,8.582217645039479e-05,2020,Annual
+24,Client prefers not to answer,Rental by Client No Subsidy,24,0.0020597322348094747,2020,Annual
+25,Client prefers not to answer,Rental by Client with Subsidy,8,0.0006865774116031583,2020,Annual
+26,Data not collected,Move In to PH,17,0.0014589769996567112,2020,Annual
+27,Data not collected,Moved in with Family,30,0.0025746652935118436,2020,Annual
+28,Data not collected,Owned by Client,9,0.000772399588053553,2020,Annual
+29,Data not collected,Rental by Client No Subsidy,63,0.005406797116374871,2020,Annual
+30,Data not collected,Rental by Client with Subsidy,29,0.0024888431170614488,2020,Annual
+31,Multi-Racial,Move In to PH,156,0.013388259526261586,2020,Annual
+32,Multi-Racial,Moved in with Family,54,0.004634397528321318,2020,Annual
+33,Multi-Racial,Owned by Client,8,0.0006865774116031583,2020,Annual
+34,Multi-Racial,Rental by Client No Subsidy,138,0.01184346035015448,2020,Annual
+35,Multi-Racial,Rental by Client with Subsidy,178,0.015276347408170271,2020,Annual
+36,Native Hawaiian or Pacific Islander,Move In to PH,46,0.00394782011671816,2020,Annual
+37,Native Hawaiian or Pacific Islander,Moved in with Family,13,0.0011156882938551322,2020,Annual
+38,Native Hawaiian or Pacific Islander,Owned by Client,4,0.00034328870580157915,2020,Annual
+39,Native Hawaiian or Pacific Islander,Rental by Client No Subsidy,39,0.0033470648815653965,2020,Annual
+40,Native Hawaiian or Pacific Islander,Rental by Client with Subsidy,43,0.0036903535873669758,2020,Annual
+41,White,Move In to PH,1805,0.1549090284929626,2020,Annual
+42,White,Moved in with Family,808,0.06934431857191899,2020,Annual
+43,White,Other Permanent Housing,3,0.00025746652935118434,2020,Annual
+44,White,Owned by Client,129,0.011071060762100926,2020,Annual
+45,White,Rental by Client No Subsidy,1837,0.1576553381393752,2020,Annual
+46,White,Rental by Client with Subsidy,2054,0.17627875042911087,2020,Annual
+0,"American Indian, Alaska Native, or Indigenous",Move In to PH,52,0.004185110663983903,2021,Annual
+1,"American Indian, Alaska Native, or Indigenous",Moved in with Family,38,0.003058350100603622,2021,Annual
+2,"American Indian, Alaska Native, or Indigenous",Owned by Client,5,0.00040241448692152917,2021,Annual
+3,"American Indian, Alaska Native, or Indigenous",Rental by Client No Subsidy,48,0.00386317907444668,2021,Annual
+4,"American Indian, Alaska Native, or Indigenous",Rental by Client with Subsidy,72,0.00579476861167002,2021,Annual
+5,Asian or Asian American,Move In to PH,67,0.005392354124748491,2021,Annual
+6,Asian or Asian American,Moved in with Family,21,0.0016901408450704226,2021,Annual
+7,Asian or Asian American,Owned by Client,1,8.048289738430584e-05,2021,Annual
+8,Asian or Asian American,Rental by Client No Subsidy,80,0.006438631790744467,2021,Annual
+9,Asian or Asian American,Rental by Client with Subsidy,79,0.006358148893360161,2021,Annual
+10,"Black, African American, or African",Move In to PH,1046,0.0841851106639839,2021,Annual
+11,"Black, African American, or African",Moved in with Family,372,0.02993963782696177,2021,Annual
+12,"Black, African American, or African",Owned by Client,48,0.00386317907444668,2021,Annual
+13,"Black, African American, or African",Rental by Client No Subsidy,859,0.0691348088531187,2021,Annual
+14,"Black, African American, or African",Rental by Client with Subsidy,1295,0.10422535211267606,2021,Annual
+15,Client doesn't know,Move In to PH,65,0.005231388329979879,2021,Annual
+16,Client doesn't know,Moved in with Family,14,0.0011267605633802818,2021,Annual
+17,Client doesn't know,Owned by Client,2,0.00016096579476861168,2021,Annual
+18,Client doesn't know,Rental by Client No Subsidy,90,0.007243460764587525,2021,Annual
+19,Client doesn't know,Rental by Client with Subsidy,52,0.004185110663983903,2021,Annual
+20,Client prefers not to answer,Move In to PH,9,0.0007243460764587525,2021,Annual
+21,Client prefers not to answer,Moved in with Family,12,0.00096579476861167,2021,Annual
+22,Client prefers not to answer,Owned by Client,2,0.00016096579476861168,2021,Annual
+23,Client prefers not to answer,Rental by Client No Subsidy,50,0.004024144869215292,2021,Annual
+24,Client prefers not to answer,Rental by Client with Subsidy,15,0.0012072434607645875,2021,Annual
+25,Data not collected,Move In to PH,27,0.0021730382293762575,2021,Annual
+26,Data not collected,Moved in with Family,17,0.0013682092555331992,2021,Annual
+27,Data not collected,Owned by Client,7,0.0005633802816901409,2021,Annual
+28,Data not collected,Rental by Client No Subsidy,66,0.005311871227364185,2021,Annual
+29,Data not collected,Rental by Client with Subsidy,34,0.0027364185110663984,2021,Annual
+30,Multi-Racial,Move In to PH,148,0.011911468812877263,2021,Annual
+31,Multi-Racial,Moved in with Family,60,0.00482897384305835,2021,Annual
+32,Multi-Racial,Owned by Client,5,0.00040241448692152917,2021,Annual
+33,Multi-Racial,Rental by Client No Subsidy,173,0.013923541247484909,2021,Annual
+34,Multi-Racial,Rental by Client with Subsidy,217,0.017464788732394366,2021,Annual
+35,Native Hawaiian or Pacific Islander,Move In to PH,57,0.0045875251509054325,2021,Annual
+36,Native Hawaiian or Pacific Islander,Moved in with Family,9,0.0007243460764587525,2021,Annual
+37,Native Hawaiian or Pacific Islander,Owned by Client,3,0.0002414486921529175,2021,Annual
+38,Native Hawaiian or Pacific Islander,Rental by Client No Subsidy,42,0.0033802816901408453,2021,Annual
+39,Native Hawaiian or Pacific Islander,Rental by Client with Subsidy,58,0.004668008048289738,2021,Annual
+40,White,Move In to PH,1859,0.14961770623742454,2021,Annual
+41,White,Moved in with Family,780,0.06277665995975855,2021,Annual
+42,White,Other Permanent Housing,2,0.00016096579476861168,2021,Annual
+43,White,Owned by Client,136,0.010945674044265594,2021,Annual
+44,White,Rental by Client No Subsidy,1937,0.15589537223340041,2021,Annual
+45,White,Rental by Client with Subsidy,2394,0.19267605633802817,2021,Annual
+0,"American Indian, Alaska Native, or Indigenous",Move In to PH,84,0.006503561474140601,2022,Annual
+1,"American Indian, Alaska Native, or Indigenous",Moved in with Family,49,0.003793744193248684,2022,Annual
+2,"American Indian, Alaska Native, or Indigenous",Other Permanent Housing,1,7.74233508826262e-05,2022,Annual
+3,"American Indian, Alaska Native, or Indigenous",Owned by Client,9,0.0006968101579436358,2022,Annual
+4,"American Indian, Alaska Native, or Indigenous",Rental by Client No Subsidy,42,0.0032517807370703003,2022,Annual
+5,"American Indian, Alaska Native, or Indigenous",Rental by Client with Subsidy,98,0.007587488386497368,2022,Annual
+6,Asian or Asian American,Move In to PH,60,0.004645401052957572,2022,Annual
+7,Asian or Asian American,Moved in with Family,19,0.0014710436667698978,2022,Annual
+8,Asian or Asian American,Owned by Client,6,0.0004645401052957572,2022,Annual
+9,Asian or Asian American,Rental by Client No Subsidy,63,0.004877671105605451,2022,Annual
+10,Asian or Asian American,Rental by Client with Subsidy,74,0.005729327965314339,2022,Annual
+11,"Black, African American, or African",Move In to PH,1339,0.10366986683183649,2022,Annual
+12,"Black, African American, or African",Moved in with Family,405,0.03135645710746361,2022,Annual
+13,"Black, African American, or African",Owned by Client,49,0.003793744193248684,2022,Annual
+14,"Black, African American, or African",Rental by Client No Subsidy,651,0.05040260142458965,2022,Annual
+15,"Black, African American, or African",Rental by Client with Subsidy,1299,0.10057293279653143,2022,Annual
+16,Client doesn't know,Move In to PH,17,0.0013161969650046454,2022,Annual
+17,Client doesn't know,Moved in with Family,10,0.000774233508826262,2022,Annual
+18,Client doesn't know,Owned by Client,2,0.0001548467017652524,2022,Annual
+19,Client doesn't know,Rental by Client No Subsidy,67,0.0051873645091359555,2022,Annual
+20,Client doesn't know,Rental by Client with Subsidy,27,0.0020904304738309076,2022,Annual
+21,Client prefers not to answer,Move In to PH,3,0.0002322700526478786,2022,Annual
+22,Client prefers not to answer,Moved in with Family,4,0.0003096934035305048,2022,Annual
+23,Client prefers not to answer,Owned by Client,4,0.0003096934035305048,2022,Annual
+24,Client prefers not to answer,Rental by Client No Subsidy,18,0.0013936203158872716,2022,Annual
+25,Client prefers not to answer,Rental by Client with Subsidy,10,0.000774233508826262,2022,Annual
+26,Data not collected,Move In to PH,34,0.0026323939300092907,2022,Annual
+27,Data not collected,Moved in with Family,12,0.0009290802105915144,2022,Annual
+28,Data not collected,Rental by Client No Subsidy,41,0.0031743573861876743,2022,Annual
+29,Data not collected,Rental by Client with Subsidy,54,0.004180860947661815,2022,Annual
+30,Multi-Racial,Move In to PH,208,0.01610405698358625,2022,Annual
+31,Multi-Racial,Moved in with Family,66,0.0051099411582533295,2022,Annual
+32,Multi-Racial,Owned by Client,3,0.0002322700526478786,2022,Annual
+33,Multi-Racial,Rental by Client No Subsidy,98,0.007587488386497368,2022,Annual
+34,Multi-Racial,Rental by Client with Subsidy,219,0.01695571384329514,2022,Annual
+35,Native Hawaiian or Pacific Islander,Move In to PH,64,0.004955094456488077,2022,Annual
+36,Native Hawaiian or Pacific Islander,Moved in with Family,24,0.0018581604211830288,2022,Annual
+37,Native Hawaiian or Pacific Islander,Owned by Client,1,7.74233508826262e-05,2022,Annual
+38,Native Hawaiian or Pacific Islander,Rental by Client No Subsidy,28,0.0021678538247135335,2022,Annual
+39,Native Hawaiian or Pacific Islander,Rental by Client with Subsidy,85,0.006580984825023227,2022,Annual
+40,White,Move In to PH,2384,0.18457726850418085,2022,Annual
+41,White,Moved in with Family,897,0.0694487457417157,2022,Annual
+42,White,Owned by Client,114,0.008826262000619386,2022,Annual
+43,White,Rental by Client No Subsidy,1619,0.12534840507897183,2022,Annual
+44,White,Rental by Client with Subsidy,2555,0.19781666150510993,2022,Annual
+0,"American Indian, Alaska Native, or Indigenous",Move In to PH,52,0.0046536602827993555,2023,Annual
+1,"American Indian, Alaska Native, or Indigenous",Moved in with Family,38,0.003400751745122606,2023,Annual
+2,"American Indian, Alaska Native, or Indigenous",Owned by Client,1,8.949346697691069e-05,2023,Annual
+3,"American Indian, Alaska Native, or Indigenous",Rental by Client No Subsidy,74,0.006622516556291391,2023,Annual
+4,"American Indian, Alaska Native, or Indigenous",Rental by Client with Subsidy,86,0.0076964381600143185,2023,Annual
+5,Asian or Asian American,Move In to PH,66,0.0059065688204761055,2023,Annual
+6,Asian or Asian American,Moved in with Family,21,0.0018793628065151243,2023,Annual
+7,Asian or Asian American,Owned by Client,3,0.00026848040093073206,2023,Annual
+8,Asian or Asian American,Rental by Client No Subsidy,73,0.00653302308931448,2023,Annual
+9,Asian or Asian American,Rental by Client with Subsidy,98,0.008770359763737247,2023,Annual
+10,"Black, African American, or African",Move In to PH,876,0.07839627707177375,2023,Annual
+11,"Black, African American, or African",Moved in with Family,357,0.03194916771075711,2023,Annual
+12,"Black, African American, or African",Owned by Client,38,0.003400751745122606,2023,Annual
+13,"Black, African American, or African",Rental by Client No Subsidy,889,0.0795596921424736,2023,Annual
+14,"Black, African American, or African",Rental by Client with Subsidy,1134,0.10148559155181672,2023,Annual
+15,Client doesn't know,Move In to PH,17,0.0015213889386074817,2023,Annual
+16,Client doesn't know,Moved in with Family,19,0.001700375872561303,2023,Annual
+17,Client doesn't know,Rental by Client No Subsidy,24,0.0021478432074458565,2023,Annual
+18,Client doesn't know,Rental by Client with Subsidy,22,0.001968856273492035,2023,Annual
+19,Client prefers not to answer,Move In to PH,28,0.002505817075353499,2023,Annual
+20,Client prefers not to answer,Moved in with Family,6,0.0005369608018614641,2023,Annual
+21,Client prefers not to answer,Rental by Client No Subsidy,29,0.0025953105423304097,2023,Annual
+22,Client prefers not to answer,Rental by Client with Subsidy,15,0.0013424020046536602,2023,Annual
+23,Data not collected,Move In to PH,56,0.005011634150706998,2023,Annual
+24,Data not collected,Moved in with Family,24,0.0021478432074458565,2023,Annual
+25,Data not collected,Owned by Client,2,0.00017898693395382138,2023,Annual
+26,Data not collected,Rental by Client No Subsidy,57,0.005101127617683909,2023,Annual
+27,Data not collected,Rental by Client with Subsidy,74,0.006622516556291391,2023,Annual
+28,Multi-Racial,Move In to PH,147,0.01315553964560587,2023,Annual
+29,Multi-Racial,Moved in with Family,52,0.0046536602827993555,2023,Annual
+30,Multi-Racial,Owned by Client,3,0.00026848040093073206,2023,Annual
+31,Multi-Racial,Rental by Client No Subsidy,142,0.012708072310721318,2023,Annual
+32,Multi-Racial,Rental by Client with Subsidy,184,0.016466797923751567,2023,Annual
+33,Native Hawaiian or Pacific Islander,Move In to PH,34,0.0030427778772149634,2023,Annual
+34,Native Hawaiian or Pacific Islander,Moved in with Family,22,0.001968856273492035,2023,Annual
+35,Native Hawaiian or Pacific Islander,Owned by Client,2,0.00017898693395382138,2023,Annual
+36,Native Hawaiian or Pacific Islander,Rental by Client No Subsidy,58,0.0051906210846608195,2023,Annual
+37,Native Hawaiian or Pacific Islander,Rental by Client with Subsidy,45,0.004027206013960981,2023,Annual
+38,White,Move In to PH,1390,0.12439591909790586,2023,Annual
+39,White,Moved in with Family,849,0.07597995346339717,2023,Annual
+40,White,Owned by Client,73,0.00653302308931448,2023,Annual
+41,White,Rental by Client No Subsidy,1760,0.1575085018793628,2023,Annual
+42,White,Rental by Client with Subsidy,2234,0.19992840522641847,2023,Annual

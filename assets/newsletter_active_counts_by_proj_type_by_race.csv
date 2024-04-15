@@ -1,0 +1,261 @@
+,Project Type,static_demographics.race_text,Active Clients Count,Abbrev,Active Clients Count Percent,Reporting Year,Reporting Window
+0,Safe Haven (SH),"American Indian, Alaska Native, or Indigenous",1,SH,2.6204077354436352e-05,2020,Annual
+1,Safe Haven (SH),Asian or Asian American,1,SH,2.6204077354436352e-05,2020,Annual
+2,Safe Haven (SH),Multi-Racial,1,SH,2.6204077354436352e-05,2020,Annual
+3,Safe Haven (SH),"Black, African American, or African",16,SH,0.00041926523767098163,2020,Annual
+4,Safe Haven (SH),White,57,SH,0.001493632409202872,2020,Annual
+5,Transitional Housing (TH),Client doesn't know,1,TH,2.6204077354436352e-05,2020,Annual
+6,Transitional Housing (TH),Client prefers not to answer,4,TH,0.00010481630941774541,2020,Annual
+7,Transitional Housing (TH),Native Hawaiian or Pacific Islander,28,TH,0.0007337141659242178,2020,Annual
+8,Transitional Housing (TH),Data not collected,35,TH,0.0009171427074052723,2020,Annual
+9,Transitional Housing (TH),"American Indian, Alaska Native, or Indigenous",40,TH,0.001048163094177454,2020,Annual
+10,Transitional Housing (TH),Asian or Asian American,40,TH,0.001048163094177454,2020,Annual
+11,Transitional Housing (TH),Multi-Racial,88,TH,0.002305958807190399,2020,Annual
+12,Transitional Housing (TH),"Black, African American, or African",647,TH,0.016954038048320318,2020,Annual
+13,Transitional Housing (TH),White,1584,TH,0.04150725852942718,2020,Annual
+14,Other (OTH),"American Indian, Alaska Native, or Indigenous",1,OTH,2.6204077354436352e-05,2020,Annual
+15,Other (OTH),Asian or Asian American,2,OTH,5.2408154708872704e-05,2020,Annual
+16,Other (OTH),Multi-Racial,5,OTH,0.00013102038677218175,2020,Annual
+17,Other (OTH),"Black, African American, or African",14,OTH,0.0003668570829621089,2020,Annual
+18,Other (OTH),White,44,OTH,0.0011529794035951995,2020,Annual
+19,Day Shelter (DS),Client doesn't know,4,DS,0.00010481630941774541,2020,Annual
+20,Day Shelter (DS),Client prefers not to answer,10,DS,0.0002620407735443635,2020,Annual
+21,Day Shelter (DS),Data not collected,17,DS,0.00044546931502541796,2020,Annual
+22,Day Shelter (DS),Native Hawaiian or Pacific Islander,104,DS,0.0027252240448613803,2020,Annual
+23,Day Shelter (DS),Asian or Asian American,134,DS,0.003511346365494471,2020,Annual
+24,Day Shelter (DS),"American Indian, Alaska Native, or Indigenous",185,DS,0.004847754310570725,2020,Annual
+25,Day Shelter (DS),Multi-Racial,282,DS,0.007389549813951051,2020,Annual
+26,Day Shelter (DS),"Black, African American, or African",2175,DS,0.05699386824589906,2020,Annual
+27,Day Shelter (DS),White,4991,DS,0.13078455007599182,2020,Annual
+28,Coordinated Entry (CE),Client doesn't know,12,CE,0.0003144489282532362,2020,Annual
+29,Coordinated Entry (CE),Client prefers not to answer,16,CE,0.00041926523767098163,2020,Annual
+30,Coordinated Entry (CE),Data not collected,22,CE,0.0005764897017975998,2020,Annual
+31,Coordinated Entry (CE),Native Hawaiian or Pacific Islander,31,CE,0.0008123263979875269,2020,Annual
+32,Coordinated Entry (CE),Asian or Asian American,38,CE,0.0009957549394685812,2020,Annual
+33,Coordinated Entry (CE),"American Indian, Alaska Native, or Indigenous",55,CE,0.0014412242544939993,2020,Annual
+34,Coordinated Entry (CE),Multi-Racial,96,CE,0.0025155914260258897,2020,Annual
+35,Coordinated Entry (CE),"Black, African American, or African",493,CE,0.01291861013573712,2020,Annual
+36,Coordinated Entry (CE),White,1508,CE,0.03951574865049002,2020,Annual
+37,Homelessness Prevention (HP),"American Indian, Alaska Native, or Indigenous",39,HP,0.0010219590168230176,2020,Annual
+38,Homelessness Prevention (HP),Native Hawaiian or Pacific Islander,42,HP,0.0011005712488863268,2020,Annual
+39,Homelessness Prevention (HP),Client prefers not to answer,47,HP,0.0012315916356585084,2020,Annual
+40,Homelessness Prevention (HP),Asian or Asian American,73,HP,0.0019128976468738535,2020,Annual
+41,Homelessness Prevention (HP),Client doesn't know,82,HP,0.0021487343430637807,2020,Annual
+42,Homelessness Prevention (HP),Data not collected,110,HP,0.0028824485089879986,2020,Annual
+43,Homelessness Prevention (HP),Multi-Racial,154,HP,0.004035427912583198,2020,Annual
+44,Homelessness Prevention (HP),"Black, African American, or African",810,HP,0.021225302657093444,2020,Annual
+45,Homelessness Prevention (HP),White,1573,HP,0.04121901367852838,2020,Annual
+46,Street Outreach (OUT),Client doesn't know,45,OUT,0.0011791834809496357,2020,Annual
+47,Street Outreach (OUT),Native Hawaiian or Pacific Islander,114,OUT,0.002987264818405744,2020,Annual
+48,Street Outreach (OUT),Asian or Asian American,173,OUT,0.004533305382317489,2020,Annual
+49,Street Outreach (OUT),"American Indian, Alaska Native, or Indigenous",207,OUT,0.005424244012368324,2020,Annual
+50,Street Outreach (OUT),Client prefers not to answer,241,OUT,0.00631518264241916,2020,Annual
+51,Street Outreach (OUT),Multi-Racial,322,OUT,0.008437712908128505,2020,Annual
+52,Street Outreach (OUT),Data not collected,1081,OUT,0.028326607620145695,2020,Annual
+53,Street Outreach (OUT),"Black, African American, or African",2308,OUT,0.0604790105340391,2020,Annual
+54,Street Outreach (OUT),White,6652,OUT,0.1743095225617106,2020,Annual
+55,Services Only (SO),Client doesn't know,82,SO,0.0021487343430637807,2020,Annual
+56,Services Only (SO),Client prefers not to answer,85,SO,0.00222734657512709,2020,Annual
+57,Services Only (SO),Native Hawaiian or Pacific Islander,132,SO,0.003458938210785598,2020,Annual
+58,Services Only (SO),Data not collected,165,SO,0.004323672763481998,2020,Annual
+59,Services Only (SO),Asian or Asian American,194,SO,0.005083591006760652,2020,Annual
+60,Services Only (SO),"American Indian, Alaska Native, or Indigenous",220,SO,0.005764897017975997,2020,Annual
+61,Services Only (SO),Multi-Racial,498,SO,0.013049630522509303,2020,Annual
+62,Services Only (SO),"Black, African American, or African",3027,SO,0.07931974215187883,2020,Annual
+63,Services Only (SO),White,6904,SO,0.18091295005502855,2020,Annual
+0,Safe Haven (SH),Asian or Asian American,1,SH,2.176704904116149e-05,2021,Annual
+1,Safe Haven (SH),Native Hawaiian or Pacific Islander,1,SH,2.176704904116149e-05,2021,Annual
+2,Safe Haven (SH),Client prefers not to answer,1,SH,2.176704904116149e-05,2021,Annual
+3,Safe Haven (SH),Multi-Racial,1,SH,2.176704904116149e-05,2021,Annual
+4,Safe Haven (SH),"American Indian, Alaska Native, or Indigenous",2,SH,4.353409808232298e-05,2021,Annual
+5,Safe Haven (SH),"Black, African American, or African",15,SH,0.00032650573561742233,2021,Annual
+6,Safe Haven (SH),White,93,SH,0.0020243355608280185,2021,Annual
+7,Other (OTH),"American Indian, Alaska Native, or Indigenous",1,OTH,2.176704904116149e-05,2021,Annual
+8,Other (OTH),Asian or Asian American,2,OTH,4.353409808232298e-05,2021,Annual
+9,Other (OTH),Multi-Racial,5,OTH,0.00010883524520580745,2021,Annual
+10,Other (OTH),"Black, African American, or African",15,OTH,0.00032650573561742233,2021,Annual
+11,Other (OTH),White,44,OTH,0.0009577501578111056,2021,Annual
+12,Transitional Housing (TH),Client prefers not to answer,4,TH,8.706819616464596e-05,2021,Annual
+13,Transitional Housing (TH),Client doesn't know,5,TH,0.00010883524520580745,2021,Annual
+14,Transitional Housing (TH),Data not collected,21,TH,0.0004571080298643913,2021,Annual
+15,Transitional Housing (TH),Native Hawaiian or Pacific Islander,34,TH,0.0007400796673994906,2021,Annual
+16,Transitional Housing (TH),Asian or Asian American,45,TH,0.000979517206852267,2021,Annual
+17,Transitional Housing (TH),"American Indian, Alaska Native, or Indigenous",55,TH,0.001197187697263882,2021,Annual
+18,Transitional Housing (TH),Multi-Racial,75,TH,0.0016325286780871117,2021,Annual
+19,Transitional Housing (TH),"Black, African American, or African",588,TH,0.012799024836202957,2021,Annual
+20,Transitional Housing (TH),White,1650,TH,0.035915630917916455,2021,Annual
+21,Day Shelter (DS),Client doesn't know,8,DS,0.0001741363923292919,2021,Annual
+22,Day Shelter (DS),Client prefers not to answer,11,DS,0.0002394375394527764,2021,Annual
+23,Day Shelter (DS),Data not collected,23,DS,0.0005006421279467142,2021,Annual
+24,Day Shelter (DS),Native Hawaiian or Pacific Islander,68,DS,0.0014801593347989813,2021,Annual
+25,Day Shelter (DS),Asian or Asian American,106,DS,0.002307307198363118,2021,Annual
+26,Day Shelter (DS),"American Indian, Alaska Native, or Indigenous",167,DS,0.003635097189873969,2021,Annual
+27,Day Shelter (DS),Multi-Racial,214,DS,0.004658148494808559,2021,Annual
+28,Day Shelter (DS),"Black, African American, or African",1767,DS,0.03846237565573235,2021,Annual
+29,Day Shelter (DS),White,4085,DS,0.08891839533314469,2021,Annual
+30,Homelessness Prevention (HP),"American Indian, Alaska Native, or Indigenous",22,HP,0.0004788750789055528,2021,Annual
+31,Homelessness Prevention (HP),Native Hawaiian or Pacific Islander,34,HP,0.0007400796673994906,2021,Annual
+32,Homelessness Prevention (HP),Client prefers not to answer,46,HP,0.0010012842558934285,2021,Annual
+33,Homelessness Prevention (HP),Asian or Asian American,51,HP,0.001110119501099236,2021,Annual
+34,Homelessness Prevention (HP),Data not collected,66,HP,0.0014366252367166584,2021,Annual
+35,Homelessness Prevention (HP),Client doesn't know,93,HP,0.0020243355608280185,2021,Annual
+36,Homelessness Prevention (HP),Multi-Racial,128,HP,0.0027861822772686706,2021,Annual
+37,Homelessness Prevention (HP),"Black, African American, or African",617,HP,0.013430269258396639,2021,Annual
+38,Homelessness Prevention (HP),White,1487,HP,0.03236760192420714,2021,Annual
+39,Coordinated Entry (CE),Client prefers not to answer,43,CE,0.000935983108769944,2021,Annual
+40,Coordinated Entry (CE),Client doesn't know,46,CE,0.0010012842558934285,2021,Annual
+41,Coordinated Entry (CE),Data not collected,85,CE,0.0018501991684987265,2021,Annual
+42,Coordinated Entry (CE),Native Hawaiian or Pacific Islander,147,CE,0.003199756209050739,2021,Annual
+43,Coordinated Entry (CE),Asian or Asian American,205,CE,0.004462245053438106,2021,Annual
+44,Coordinated Entry (CE),"American Indian, Alaska Native, or Indigenous",244,CE,0.0053111599660434035,2021,Annual
+45,Coordinated Entry (CE),Multi-Racial,454,CE,0.009882240264687316,2021,Annual
+46,Coordinated Entry (CE),"Black, African American, or African",2636,CE,0.05737794127250169,2021,Annual
+47,Coordinated Entry (CE),White,6622,CE,0.1441413987505714,2021,Annual
+48,Street Outreach (OUT),Client doesn't know,67,OUT,0.0014583922857578197,2021,Annual
+49,Street Outreach (OUT),Client prefers not to answer,120,OUT,0.0026120458849393786,2021,Annual
+50,Street Outreach (OUT),Native Hawaiian or Pacific Islander,134,OUT,0.0029167845715156395,2021,Annual
+51,Street Outreach (OUT),Asian or Asian American,191,OUT,0.004157506366861845,2021,Annual
+52,Street Outreach (OUT),"American Indian, Alaska Native, or Indigenous",295,OUT,0.00642127946714264,2021,Annual
+53,Street Outreach (OUT),Multi-Racial,376,OUT,0.00818441043947672,2021,Annual
+54,Street Outreach (OUT),Data not collected,414,OUT,0.009011558303040857,2021,Annual
+55,Street Outreach (OUT),"Black, African American, or African",2557,OUT,0.05565834439824993,2021,Annual
+56,Street Outreach (OUT),White,7919,OUT,0.17237326135695782,2021,Annual
+57,Services Only (SO),Client doesn't know,69,SO,0.0015019263838401428,2021,Annual
+58,Services Only (SO),Client prefers not to answer,94,SO,0.00204610260986918,2021,Annual
+59,Services Only (SO),Native Hawaiian or Pacific Islander,147,SO,0.003199756209050739,2021,Annual
+60,Services Only (SO),Data not collected,151,SO,0.003286824405215385,2021,Annual
+61,Services Only (SO),Asian or Asian American,217,SO,0.004723449641932043,2021,Annual
+62,Services Only (SO),"American Indian, Alaska Native, or Indigenous",251,SO,0.005463529309331534,2021,Annual
+63,Services Only (SO),Multi-Racial,561,SO,0.012211314512091596,2021,Annual
+64,Services Only (SO),"Black, African American, or African",3073,SO,0.06689014170348925,2021,Annual
+65,Services Only (SO),White,7172,SO,0.1561132757232102,2021,Annual
+0,Other (OTH),"American Indian, Alaska Native, or Indigenous",1,OTH,1.8930430667297682e-05,2022,Annual
+1,Other (OTH),Asian or Asian American,2,OTH,3.7860861334595363e-05,2022,Annual
+2,Other (OTH),Multi-Racial,5,OTH,9.46521533364884e-05,2022,Annual
+3,Other (OTH),"Black, African American, or African",15,OTH,0.00028395646000946523,2022,Annual
+4,Other (OTH),White,44,OTH,0.000832938949361098,2022,Annual
+5,Safe Haven (SH),Native Hawaiian or Pacific Islander,2,SH,3.7860861334595363e-05,2022,Annual
+6,Safe Haven (SH),Asian or Asian American,2,SH,3.7860861334595363e-05,2022,Annual
+7,Safe Haven (SH),Multi-Racial,3,SH,5.679129200189304e-05,2022,Annual
+8,Safe Haven (SH),"American Indian, Alaska Native, or Indigenous",3,SH,5.679129200189304e-05,2022,Annual
+9,Safe Haven (SH),"Black, African American, or African",21,SH,0.0003975390440132513,2022,Annual
+10,Safe Haven (SH),White,85,SH,0.001609086606720303,2022,Annual
+11,Transitional Housing (TH),Client prefers not to answer,4,TH,7.572172266919073e-05,2022,Annual
+12,Transitional Housing (TH),Client doesn't know,12,TH,0.00022716516800757217,2022,Annual
+13,Transitional Housing (TH),Data not collected,12,TH,0.00022716516800757217,2022,Annual
+14,Transitional Housing (TH),Asian or Asian American,33,TH,0.0006247042120208234,2022,Annual
+15,Transitional Housing (TH),Native Hawaiian or Pacific Islander,40,TH,0.0007572172266919072,2022,Annual
+16,Transitional Housing (TH),"American Indian, Alaska Native, or Indigenous",63,TH,0.001192617132039754,2022,Annual
+17,Transitional Housing (TH),Multi-Racial,77,TH,0.0014576431613819215,2022,Annual
+18,Transitional Housing (TH),"Black, African American, or African",652,TH,0.012342640795078089,2022,Annual
+19,Transitional Housing (TH),White,1758,TH,0.033279697113109324,2022,Annual
+20,Day Shelter (DS),Client doesn't know,7,DS,0.00013251301467108378,2022,Annual
+21,Day Shelter (DS),Client prefers not to answer,17,DS,0.0003218173213440606,2022,Annual
+22,Day Shelter (DS),Data not collected,26,DS,0.0004921911973497397,2022,Annual
+23,Day Shelter (DS),Native Hawaiian or Pacific Islander,102,DS,0.0019309039280643635,2022,Annual
+24,Day Shelter (DS),Asian or Asian American,117,DS,0.0022148603880738286,2022,Annual
+25,Day Shelter (DS),Multi-Racial,205,DS,0.0038807382867960248,2022,Annual
+26,Day Shelter (DS),"American Indian, Alaska Native, or Indigenous",226,DS,0.004278277330809276,2022,Annual
+27,Day Shelter (DS),"Black, African American, or African",1890,DS,0.035778513961192616,2022,Annual
+28,Day Shelter (DS),White,4459,DS,0.08441079034548037,2022,Annual
+29,Homelessness Prevention (HP),Native Hawaiian or Pacific Islander,16,HP,0.0003028868906767629,2022,Annual
+30,Homelessness Prevention (HP),Client prefers not to answer,25,HP,0.000473260766682442,2022,Annual
+31,Homelessness Prevention (HP),"American Indian, Alaska Native, or Indigenous",32,HP,0.0006057737813535258,2022,Annual
+32,Homelessness Prevention (HP),Data not collected,34,HP,0.0006436346426881212,2022,Annual
+33,Homelessness Prevention (HP),Client doesn't know,35,HP,0.0006625650733554188,2022,Annual
+34,Homelessness Prevention (HP),Asian or Asian American,75,HP,0.001419782300047326,2022,Annual
+35,Homelessness Prevention (HP),Multi-Racial,88,HP,0.001665877898722196,2022,Annual
+36,Homelessness Prevention (HP),"Black, African American, or African",555,HP,0.010506389020350212,2022,Annual
+37,Homelessness Prevention (HP),White,1211,HP,0.02292475153809749,2022,Annual
+38,Coordinated Entry (CE),Client prefers not to answer,58,CE,0.0010979649787032655,2022,Annual
+39,Coordinated Entry (CE),Client doesn't know,76,CE,0.0014387127307146238,2022,Annual
+40,Coordinated Entry (CE),Data not collected,206,CE,0.0038996687174633225,2022,Annual
+41,Coordinated Entry (CE),Native Hawaiian or Pacific Islander,228,CE,0.004316138192143871,2022,Annual
+42,Coordinated Entry (CE),Asian or Asian American,250,CE,0.00473260766682442,2022,Annual
+43,Coordinated Entry (CE),"American Indian, Alaska Native, or Indigenous",441,CE,0.008348319924278277,2022,Annual
+44,Coordinated Entry (CE),Multi-Racial,655,CE,0.01239943208707998,2022,Annual
+45,Coordinated Entry (CE),"Black, African American, or African",3750,CE,0.07098911500236631,2022,Annual
+46,Coordinated Entry (CE),White,9011,CE,0.1705821107430194,2022,Annual
+47,Services Only (SO),Client doesn't know,75,SO,0.001419782300047326,2022,Annual
+48,Services Only (SO),Client prefers not to answer,86,SO,0.0016280170373876007,2022,Annual
+49,Services Only (SO),Data not collected,181,SO,0.0034264079507808805,2022,Annual
+50,Services Only (SO),Native Hawaiian or Pacific Islander,186,SO,0.0035210601041173687,2022,Annual
+51,Services Only (SO),Asian or Asian American,248,SO,0.004694746805489825,2022,Annual
+52,Services Only (SO),"American Indian, Alaska Native, or Indigenous",365,SO,0.006909607193563654,2022,Annual
+53,Services Only (SO),Multi-Racial,655,SO,0.01239943208707998,2022,Annual
+54,Services Only (SO),"Black, African American, or African",3414,SO,0.06462849029815429,2022,Annual
+55,Services Only (SO),White,8176,SO,0.15477520113582585,2022,Annual
+56,Street Outreach (OUT),Client doesn't know,78,OUT,0.001476573592049219,2022,Annual
+57,Street Outreach (OUT),Client prefers not to answer,141,OUT,0.002669190724088973,2022,Annual
+58,Street Outreach (OUT),Native Hawaiian or Pacific Islander,174,OUT,0.0032938949361097964,2022,Annual
+59,Street Outreach (OUT),Asian or Asian American,196,OUT,0.0037103644107903456,2022,Annual
+60,Street Outreach (OUT),Data not collected,329,OUT,0.006228111689540937,2022,Annual
+61,Street Outreach (OUT),"American Indian, Alaska Native, or Indigenous",378,OUT,0.007155702792238524,2022,Annual
+62,Street Outreach (OUT),Multi-Racial,468,OUT,0.008859441552295315,2022,Annual
+63,Street Outreach (OUT),"Black, African American, or African",2818,OUT,0.053345953620444864,2022,Annual
+64,Street Outreach (OUT),White,8228,OUT,0.15575958353052533,2022,Annual
+0,Safe Haven (SH),Native Hawaiian or Pacific Islander,1,SH,1.8366484838466765e-05,2023,Annual
+1,Safe Haven (SH),Data not collected,3,SH,5.5099454515400294e-05,2023,Annual
+2,Safe Haven (SH),Multi-Racial,6,SH,0.00011019890903080059,2023,Annual
+3,Safe Haven (SH),"American Indian, Alaska Native, or Indigenous",7,SH,0.00012856539386926736,2023,Annual
+4,Safe Haven (SH),"Black, African American, or African",33,SH,0.0006060939996694033,2023,Annual
+5,Safe Haven (SH),White,99,SH,0.0018182819990082099,2023,Annual
+6,Other (OTH),"American Indian, Alaska Native, or Indigenous",1,OTH,1.8366484838466765e-05,2023,Annual
+7,Other (OTH),Asian or Asian American,2,OTH,3.673296967693353e-05,2023,Annual
+8,Other (OTH),Multi-Racial,5,OTH,9.183242419233383e-05,2023,Annual
+9,Other (OTH),"Black, African American, or African",15,OTH,0.0002754972725770015,2023,Annual
+10,Other (OTH),White,38,OTH,0.0006979264238617371,2023,Annual
+11,Homelessness Prevention (HP),Client doesn't know,3,HP,5.5099454515400294e-05,2023,Annual
+12,Homelessness Prevention (HP),"American Indian, Alaska Native, or Indigenous",17,HP,0.000312230242253935,2023,Annual
+13,Homelessness Prevention (HP),Client prefers not to answer,20,HP,0.0003673296967693353,2023,Annual
+14,Homelessness Prevention (HP),Native Hawaiian or Pacific Islander,25,HP,0.00045916212096166917,2023,Annual
+15,Homelessness Prevention (HP),Data not collected,46,HP,0.0008448583025694712,2023,Annual
+16,Homelessness Prevention (HP),Asian or Asian American,54,HP,0.0009917901812772053,2023,Annual
+17,Homelessness Prevention (HP),Multi-Racial,69,HP,0.0012672874538542068,2023,Annual
+18,Homelessness Prevention (HP),"Black, African American, or African",534,HP,0.009807702903741253,2023,Annual
+19,Homelessness Prevention (HP),White,813,HP,0.01493195217367348,2023,Annual
+20,Transitional Housing (TH),Client prefers not to answer,6,TH,0.00011019890903080059,2023,Annual
+21,Transitional Housing (TH),Client doesn't know,12,TH,0.00022039781806160118,2023,Annual
+22,Transitional Housing (TH),Data not collected,27,TH,0.0004958950906386026,2023,Annual
+23,Transitional Housing (TH),Asian or Asian American,35,TH,0.0006428269693463368,2023,Annual
+24,Transitional Housing (TH),"American Indian, Alaska Native, or Indigenous",35,TH,0.0006428269693463368,2023,Annual
+25,Transitional Housing (TH),Native Hawaiian or Pacific Islander,43,TH,0.000789758848054071,2023,Annual
+26,Transitional Housing (TH),Multi-Racial,70,TH,0.0012856539386926736,2023,Annual
+27,Transitional Housing (TH),"Black, African American, or African",540,TH,0.009917901812772054,2023,Annual
+28,Transitional Housing (TH),White,1418,TH,0.026043675500945874,2023,Annual
+29,Day Shelter (DS),Client prefers not to answer,20,DS,0.0003673296967693353,2023,Annual
+30,Day Shelter (DS),Client doesn't know,24,DS,0.00044079563612320236,2023,Annual
+31,Day Shelter (DS),Data not collected,45,DS,0.0008264918177310045,2023,Annual
+32,Day Shelter (DS),Native Hawaiian or Pacific Islander,114,DS,0.0020937792715852114,2023,Annual
+33,Day Shelter (DS),Asian or Asian American,131,DS,0.0024060095138391463,2023,Annual
+34,Day Shelter (DS),Multi-Racial,181,DS,0.0033243337557624848,2023,Annual
+35,Day Shelter (DS),"American Indian, Alaska Native, or Indigenous",224,DS,0.0041140926038165555,2023,Annual
+36,Day Shelter (DS),"Black, African American, or African",1837,DS,0.03373923264826345,2023,Annual
+37,Day Shelter (DS),White,4374,DS,0.08033500468345363,2023,Annual
+38,Coordinated Entry (CE),Client prefers not to answer,90,CE,0.001652983635462009,2023,Annual
+39,Coordinated Entry (CE),Client doesn't know,158,CE,0.002901904604477749,2023,Annual
+40,Coordinated Entry (CE),Native Hawaiian or Pacific Islander,231,CE,0.004242657997685823,2023,Annual
+41,Coordinated Entry (CE),Data not collected,304,CE,0.005583411390893897,2023,Annual
+42,Coordinated Entry (CE),Asian or Asian American,357,CE,0.0065568350873326355,2023,Annual
+43,Coordinated Entry (CE),"American Indian, Alaska Native, or Indigenous",382,CE,0.007015997208294305,2023,Annual
+44,Coordinated Entry (CE),Multi-Racial,580,CE,0.010652561206310723,2023,Annual
+45,Coordinated Entry (CE),"Black, African American, or African",3995,CE,0.07337410692967473,2023,Annual
+46,Coordinated Entry (CE),White,9611,CE,0.1765202857825041,2023,Annual
+47,Street Outreach (OUT),Client prefers not to answer,99,OUT,0.0018182819990082099,2023,Annual
+48,Street Outreach (OUT),Client doesn't know,100,OUT,0.0018366484838466767,2023,Annual
+49,Street Outreach (OUT),Native Hawaiian or Pacific Islander,153,OUT,0.0028100721802854153,2023,Annual
+50,Street Outreach (OUT),Asian or Asian American,188,OUT,0.003452899149631752,2023,Annual
+51,Street Outreach (OUT),Data not collected,335,OUT,0.0061527724208863665,2023,Annual
+52,Street Outreach (OUT),"American Indian, Alaska Native, or Indigenous",337,OUT,0.0061895053905633,2023,Annual
+53,Street Outreach (OUT),Multi-Racial,419,OUT,0.007695557147317575,2023,Annual
+54,Street Outreach (OUT),"Black, African American, or African",2842,OUT,0.05219754991092255,2023,Annual
+55,Street Outreach (OUT),White,7764,OUT,0.14259738828585597,2023,Annual
+56,Services Only (SO),Client prefers not to answer,143,SO,0.0026264073319007476,2023,Annual
+57,Services Only (SO),Client doesn't know,159,SO,0.0029202710893162158,2023,Annual
+58,Services Only (SO),Native Hawaiian or Pacific Islander,197,SO,0.003618197513177953,2023,Annual
+59,Services Only (SO),Data not collected,274,SO,0.0050324168457398935,2023,Annual
+60,Services Only (SO),Asian or Asian American,319,SO,0.005858908663470898,2023,Annual
+61,Services Only (SO),"American Indian, Alaska Native, or Indigenous",377,SO,0.006924164784101971,2023,Annual
+62,Services Only (SO),Multi-Racial,644,SO,0.011828016235972598,2023,Annual
+63,Services Only (SO),"Black, African American, or African",3830,SO,0.07034363693132771,2023,Annual
+64,Services Only (SO),White,9632,SO,0.1769059819641119,2023,Annual
