@@ -27,7 +27,7 @@ app.title = "HMIS Newsletter Dashboard"
 server = app.server
 
 # Specify the favicon
-favicon = "path/to/favicon.ico"
+favicon = "assets/favicon.png"
 
 # List comprehension to create nav items for each page
 nav_items = [
@@ -38,13 +38,17 @@ nav_items = [
     ) for page in page_registry.values()]
 
 
+# Check if nav_items has at least 2 elements to avoid IndexError
+if len(nav_items) >= 3:
+    nav_items[1], nav_items[2] = nav_items[2], nav_items[1]
+
 
 
 import dash_bootstrap_components as dbc
 from dash import Input, Output, State, html
 from dash_bootstrap_components._components.Container import Container
 
-RTFH_LOGO = "assets/rtfh_logo.png"
+RTFH_LOGO = "assets/white_rtfh_logo_2024.png"
 
 navbar = dbc.Navbar(
     dbc.Container(
@@ -65,22 +69,29 @@ navbar = dbc.Navbar(
             ),
         ]
     ),
-    color="dark",
+    color="#0075C2",
     dark=True,
     className="mb-3",
 )
 
 
 app.layout = html.Div([
+    html.Link(rel='icon', href=favicon),
     navbar,
     page_container,
     html.Footer(
-        html.Img(
-            src="assets/navbar_bg.png",
-            style={"width": "100%", "height": "auto", "object-fit": "cover"}
-        ),
-        style={"background-color":"white"},
-    ),
+        className='footer',
+        style={
+            "background-image": "url('assets/header_footer.png')",
+            "background-size": "auto 100%",  # This maintains the height aspect ratio
+            "background-repeat": "repeat-x",
+            "height": "3vw",  # Set the desired height of the footer
+            "background-color": "white",
+            "width": "100%",  # Ensure the footer extends full width
+            'position': 'sticky', 
+            'bottom': '0'
+        }
+    )
 ])
 
 # add callback for toggling the collapse on small screens
@@ -93,6 +104,10 @@ def toggle_navbar_collapse(n, is_open):
     if n:
         return not is_open
     return is_open
+
+
+if __name__ == '__main__':
+    app.run_server(debug=True, port=8050)
 
 
 if __name__ == '__main__':
