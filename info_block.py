@@ -4,100 +4,101 @@ from dash import html
 inclusive_procurement = html.Div(
     style={
         'display': 'flex',
-        'flex-direction': 'column',
-        'width': '100%',
-        "padding-top":"1vw"
+        'flex-direction': 'row',
+        "justify-content":"center",
+        "flex-wrap":"wrap",
+        "gap":"0",
+        "flex-grow":"1 1 1 1",
+        "align-items":"stretch",
+        "padding": "0 27.5%",
+        "margin":"0",
+        "box-sizing": "border-box"  # Ensures padding and border are included in dimensions
     },
     children=[
         dbc.Row([
             dbc.Col(
                 html.Div(
-                    children=[
-                        html.H5("Weighting and Valuing Equity", className='text-center', style={"padding": "10px"}),
-                        html.P("Incorporated weighted equity goals into their organizational RFPs. "
-                               "Focus on supporting grassroots efforts. Organizations supporting and led "
-                               "by people of color.",
-                               className='text-center', style={"padding": "0 1vw"}),
-                    ],
+                    html.H5("Weighting and Valuing Equity", className='text-center training_pie', style={"padding-bottom":"1vw"}),
                     style={
                         "color": "white",
                         "background-color": "#8D3188",
-                        "padding": "2vw",
+                    #     "margin": "0",
+                    #     "padding": "0",
                         "display": "flex",
                         "align-items": "center",
-                        "justify-content": "center",
+                        "justify-content": "flex-end",
                         "flex-direction": "column",
-                        "height": "18vw"  # Adjust height as necessary
-                    }),
-                md=6, sm=6, xs=6, className="d-flex align-items-stretch"
+                        "border": "5px solid #8D3188",
+                        "border-radius": "100% 0 0 0",
+                        "width": "14vw",
+                        "height": "14vw"
+                    }
+                    ),
+                md=6, sm=6, xs=6,
             ),
             dbc.Col(
                 html.Div(
-                    children=[
-                        html.H5("Simplified Application Processes", className='text-center', style={"padding": "10px"}),
-                        html.P("Streamlined and simplified the application and procurement processes to make them more "
-                               "accessible to smaller organizations with limited resources and capacity.",
-                               className='text-center', style={"padding": "0 1vw"}),
-                    ],
+                    html.H5("Simplified Application Processes", className='text-center training_pie', style={"padding-bottom":"1vw"}),
                     style={
                         "color": "white",
                         "background-color": "#00CED1",
-                        "padding": "2vw",
+                        # "margin": "0",
+                        # "padding": "0",
                         "display": "flex",
                         "align-items": "center",
-                        "justify-content": "center",
+                        "justify-content": "flex-end",
                         "flex-direction": "column",
-                        "height": "18vw"  # Adjust height as necessary
+                        "border": "5px solid #00CED1",
+                        "border-radius": "0 100% 0 0",
+                        "width": "14vw",
+                        "height": "14vw"
                     }),
-                md=6, sm=6, xs=6, className="d-flex align-items-stretch"
+                md=6, sm=6, xs=6
             ),
-        ], className='g-0'),
+        ]),
         dbc.Row([
             dbc.Col(
                 html.Div(
-                    children=[
-                        html.H5("Capacity Building Support", className='text-center', style={"padding": "10px"}),
-                        html.P("Provided education and technical assistance to help grassroots organizations "
-                               "strengthen their capabilities in areas such as financial management, proposal writing, "
-                               "and program design.",
-                               className='text-center', style={"padding": "0 1vw"}),
-                    ],
+                    html.H5("Capacity Building Support", className='text-center training_pie', style={"padding-top":"1vw"}),
                     style={
                         "color": "white",
                         "background-color": "#F8C02A",
-                        "padding": "2vw",
+                        # "margin": "0",
+                        # "padding": "0",
                         "display": "flex",
                         "align-items": "center",
-                        "justify-content": "center",
+                        "justify-content": "flex-start",
                         "flex-direction": "column",
-                        "height": "18vw"  # Adjust height as necessary
+                        "border": "5px solid #F8C02A",
+                        "border-radius": "0 0 0 100%",
+                        "width": "14vw",
+                        "height": "14vw"
                     }),
-                md=6, sm=6, xs=6, className="d-flex align-items-stretch"
+                md=6, sm=6, xs=6
             ),
             dbc.Col(
                 html.Div(
-                    children=[
-                        html.H5("Transparent and Targeted Communication", className='text-center', style={"padding": "10px"}),
-                        html.P("Maintained transparent communication channels to inform grassroots organizations "
-                               "and marginalized groups about procurement opportunities, requirements, and selection "
-                               "criteria, conducive to fostering trust and confidence in the process.",
-                               className='text-center', style={"padding": "0 1vw"}),
-                    ],
+                    html.H5("Transparent and Targeted Communication", className='text-center training_pie', style={"padding-top":"1vw"}),
                     style={
                         "color": "white",
                         "background-color": "#0075C2",
-                        "padding": "2vw",
+                        # "margin": "0",
+                        # "padding": "0",
                         "display": "flex",
                         "align-items": "center",
-                        "justify-content": "center",
+                        "justify-content": "flex-start",
                         "flex-direction": "column",
-                        "height": "18vw"  # Adjust height as necessary
+                        "border": "5px solid #0075C2",
+                        "border-radius": "0 0 100% 0",
+                        "width": "14vw",
+                        "height": "14vw"
                     }),
-                md=6, sm=6, xs=6, className="d-flex align-items-stretch"
+                md=6, sm=6, xs=6
             )
-        ], className='g-0')
+        ], style={"padding-top":"2px"})
     ]
 )
+
 
 timeline_events = [
     # Previous events remain unchanged
@@ -198,6 +199,8 @@ info_block = html.Div(
             ]),
     ],
 )
+
+
 
 
 # info_block = html.Div(
