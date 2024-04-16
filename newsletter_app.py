@@ -24,7 +24,7 @@ from io import StringIO
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], use_pages=True, suppress_callback_exceptions=True)
 app.title = "HMIS Newsletter Dashboard"
-# server = app.server
+server = app.server
 
 # Specify the favicon
 favicon = "assets/favicon.png"
