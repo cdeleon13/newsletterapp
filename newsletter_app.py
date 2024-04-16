@@ -24,7 +24,7 @@ from io import StringIO
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], use_pages=True, suppress_callback_exceptions=True)
 app.title = "HMIS Newsletter Dashboard"
-server = app.server
+# server = app.server
 
 # Specify the favicon
 favicon = "assets/favicon.png"
@@ -104,10 +104,6 @@ def toggle_navbar_collapse(n, is_open):
     if n:
         return not is_open
     return is_open
-
-
-if __name__ == '__main__':
-    app.run_server(debug=True, port=8050)
 
 
 if __name__ == '__main__':
