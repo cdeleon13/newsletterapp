@@ -1,6 +1,3 @@
-# Run this app with `python app.py` and
-# visit http://127.0.0.1:8050/ in your web browser.
-
 from dash import Dash, html, dcc, Input, Output, page_registry, page_container, register_page, callback
 import plotly.express as px
 import plotly.graph_objs as go
@@ -61,6 +58,7 @@ def load_data():
         pit_data_likely_df,
         pit_data_df,
         race_picklist)
+
 
 (newsletter_housed_counts_by_destination_df, 
 newsletter_counts_by_race_df1, 
@@ -405,3 +403,4 @@ def update_metrics(selected_year):
         d['Housed Veterans Count'],
         d['Active Count'],
         )
+
