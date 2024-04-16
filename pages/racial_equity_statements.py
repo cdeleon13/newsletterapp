@@ -15,10 +15,8 @@ from dash import html
 from block1 import block1
 from block2 import block2
 from block3 import block3
-from racial_equity_block import accordion_block
 from pit_racial_equity_block import pit_re_block
-# from navbar import navbar
-# from racial_equity_filters import re_filters_section
+
 
 import requests
 from io import StringIO
