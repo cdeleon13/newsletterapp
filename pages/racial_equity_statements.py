@@ -15,8 +15,10 @@ from dash import html
 from block1 import block1
 from block2 import block2
 from block3 import block3
+from racial_equity_block import accordion_block
 from pit_racial_equity_block import pit_re_block
-
+# from navbar import navbar
+# from racial_equity_filters import re_filters_section
 
 import requests
 from io import StringIO
@@ -177,8 +179,8 @@ layout = dbc.Container(
 
 
 @callback(
-Output(component_id='sheltered_pit_1', component_property='children'),
-Output(component_id='unsheltered_pit_1', component_property='children'),
+Output(component_id='equity_statements', component_property='children'),
+# Output(component_id='unsheltered_pit_1', component_property='children'),
 Output(component_id='race_equity_pit_statement', component_property='children'),
 Input('pit-racial-equity-select-year', 'value'),
 Input('pit-racial-equity-select-race', 'value')
@@ -192,7 +194,7 @@ def racial_equity_pit_data(selected_year, race_option):
         'Native Hawaiian or Pacific Islander':0.006,
         'Multi-Racial':.049
     }
-    if race_option in ["Black, African American, or African", "White"]:
+    if race_option=="Black, African American, or African":
         sheltered_pit_1 = pit_data_likely_df[(pit_data_likely_df['Year'].values==selected_year) & (pit_data_likely_df['Race'].values==race_option) & (pit_data_likely_df['index'].values=='Sheltered')]['Likely Metric'].values[0]
         if sheltered_pit_1>1:
             sheltered_likely_metric_statement = f"{race_option} clients are {'{:.1f}'.format(sheltered_pit_1)} times more likely to experience Sheltered Homelessness than Non-{race_option} clients"
@@ -212,9 +214,25 @@ def racial_equity_pit_data(selected_year, race_option):
             unsheltered_likely_metric_statement = f"{race_option} clients are {'{:.1f}'.format(unsheltered_pit_1)} times more likely to experience Unsheltered Homelessness than Non-{race_option} clients"
         else:
             unsheltered_likely_metric_statement = "No data available."
+
+        equity_statements = [
+            html.H2(
+                children=[html.P("Racial Equity Statement on Sheltered PIT Data", className='display-6', style={"color":"white","background-color":"#F8C02A"})]
+            ),
+            html.H1(
+                children=[html.P(f"{sheltered_likely_metric_statement}", className='display-4', style={"color":"#F8C02A"})]
+            ), 
+            html.H2(
+                children=[html.P("Racial Equity Statement on Unsheltered PIT Data", className='display-6', style={"color":"white","background-color":"#8D3188"})]
+            ),
+            html.H1(
+                children=[html.P(f"{unsheltered_likely_metric_statement}", className='display-4', style={"color":"#8D3188"})]
+            ),
+        ]
     else:
-        sheltered_likely_metric_statement = "There is not sufficient data to make this assessment."
-        unsheltered_likely_metric_statement = "There is not sufficient data to make this assessment."
+        equity_statements = []
+        # sheltered_likely_metric_statement = "There is not sufficient data to make this assessment."
+        # unsheltered_likely_metric_statement = "There is not sufficient data to make this assessment."
 
     # Compare population percent statement
     total_pit_data = pit_data_df[(pit_data_df['Year'].values==selected_year) & (pit_data_df['static_demographics.race_text'].values==race_option)]['Total'].values[0]/pit_data_df[(pit_data_df['Year'].values==selected_year)]['Total'].sum()
@@ -226,4 +244,4 @@ def racial_equity_pit_data(selected_year, race_option):
 
 
     # return sheltered_likely_metric_statement, sheltered_compare_pop_percent_statement, unsheltered_likely_metric_statement, unsheltered_compare_pop_percent_statement
-    return sheltered_likely_metric_statement, unsheltered_likely_metric_statement, compare_pop_percent_statement
+    return equity_statements, compare_pop_percent_statement
