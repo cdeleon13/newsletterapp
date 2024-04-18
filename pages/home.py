@@ -288,7 +288,7 @@ def update_(selected_year):
         for i, name in enumerate(count_by_race_df['static_demographics.race_text'].unique()):
             fig.update_traces(selector=dict(name=name), marker=dict(colors=[color_dict[name]]))
 
-        fig.update_traces(textposition='inside', hovertemplate='%{label}: %{value:.0f}')
+        fig.update_traces(textposition='inside', hovertemplate='%{label}<br>%{value:.0f}')
 
         donut_plot_d[col] = fig
 
