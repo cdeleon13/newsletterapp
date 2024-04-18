@@ -30,8 +30,8 @@ inclusive_procurement = html.Div(
                         "flex-direction": "column",
                         "border": "5px solid #8D3188",
                         "border-radius": "100% 0 0 0",
-                        "width": "14vw",
-                        "height": "14vw"
+                        "width": "12vw",
+                        "height": "12vw"
                     }
                     ),
                 md=6, sm=6, xs=6,
@@ -50,8 +50,8 @@ inclusive_procurement = html.Div(
                         "flex-direction": "column",
                         "border": "5px solid #00CED1",
                         "border-radius": "0 100% 0 0",
-                        "width": "14vw",
-                        "height": "14vw"
+                        "width": "12vw",
+                        "height": "12vw"
                     }),
                 md=6, sm=6, xs=6
             ),
@@ -71,8 +71,8 @@ inclusive_procurement = html.Div(
                         "flex-direction": "column",
                         "border": "5px solid #F8C02A",
                         "border-radius": "0 0 0 100%",
-                        "width": "14vw",
-                        "height": "14vw"
+                        "width": "12vw",
+                        "height": "12vw"
                     }),
                 md=6, sm=6, xs=6
             ),
@@ -90,8 +90,8 @@ inclusive_procurement = html.Div(
                         "flex-direction": "column",
                         "border": "5px solid #0075C2",
                         "border-radius": "0 0 100% 0",
-                        "width": "14vw",
-                        "height": "14vw"
+                        "width": "12vw",
+                        "height": "12vw"
                     }),
                 md=6, sm=6, xs=6
             )
