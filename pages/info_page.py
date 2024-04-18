@@ -27,8 +27,8 @@ from io import StringIO
 register_page(
     __name__,
     path='/info-page',
-    title='Qualitative Overview',
-    name='Qualitative Overview'
+    title='Action Items',
+    name='Action Items'
 )
 
 layout = dbc.Container(
